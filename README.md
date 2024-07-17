@@ -117,24 +117,24 @@ Part 5. Inference for proportions and counts
   - Inference for count data       
 
 Part 6. Regression and correlation    
-  -Scatter plots, descriptive statistics for two variables  
-  -Linear regression  
-  -Least squares method  
-  -Estimation of parameters in regression  
-  -Model checking  
-  -Interpretation of regression parameters   
-  -Pearson’s correlation  
-  -Difference between correlation and regression  
-  -Spearman’s correlation  
-  -Kendall’s tau    
+  - Scatter plots, descriptive statistics for two variables  
+  - Linear regression  
+  - Least squares method  
+  - Estimation of parameters in regression  
+  - Model checking  
+  - Interpretation of regression parameters   
+  - Pearson’s correlation  
+  - Difference between correlation and regression  
+  - Spearman’s correlation  
+  - Kendall’s tau    
 
 
 Part 7 Nonparametric statistics (optional, if time permits)	     
-  -CI for median   
-   -Wilcoxon signed rank test   
-   - Friedman test  
-   -Mann-Whitney/Wilxocon rank sum test   
-   -Kruskal-Wallis test
+    -CI for median   
+    -  Wilcoxon signed rank test   
+     - Friedman test  
+     -Mann-Whitney/Wilxocon rank sum test   
+     -Kruskal-Wallis test
 
 
 
