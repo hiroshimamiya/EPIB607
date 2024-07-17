@@ -106,36 +106,35 @@ Par 4. Inference for means
  - Confidence intervals & hypothesis testing for a two samples (paired and unpaired data 
       equal variance, unpaired data unequal variance) 
 
-Part 5. Inference for proportions and counts    
-  - Hypothesis testing for proportions
-  - Sample size & power calculations
-  - Chi2 test to compare proportions
-  - Fisher’s exact test
-  - Relative risk and odds ratio
-  - Mantel-Haenzel to combine 2x2 tables
-  - McNemar’s test
-  - Inference for count data     
-
+Part 5. Inference for proportions and counts      
+  - Hypothesis testing for proportions  
+  - Sample size & power calculations  
+  - Chi2 test to compare proportions  
+  - Fisher’s exact test  
+  - Relative risk and odds ratio  
+  - Mantel-Haenzel to combine 2x2 tables  
+  - McNemar’s test   
+  - Inference for count data       
 
 Part 6. Regression and correlation    
-  -Scatter plots, descriptive statistics for two variables
-  -Linear regression
-  -Least squares method
-  -Estimation of parameters in regression
-  -Model checking
-  -Interpretation of regression parameters 
-  -Pearson’s correlation
-  -Difference between correlation and regression
-  -Spearman’s correlation
+  -Scatter plots, descriptive statistics for two variables  
+  -Linear regression  
+  -Least squares method  
+  -Estimation of parameters in regression  
+  -Model checking  
+  -Interpretation of regression parameters   
+  -Pearson’s correlation  
+  -Difference between correlation and regression  
+  -Spearman’s correlation  
   -Kendall’s tau    
 
 
 Part 7 Nonparametric statistics (optional, if time permits)	     
- -CI for median  
- -Wilcoxon signed rank test 
- -Friedman test 
- -Mann-Whitney/Wilxocon rank sum test 
- -Kruskal-Wallis test 
+ -CI for median   
+ -Wilcoxon signed rank test   
+ -Friedman test  
+ -Mann-Whitney/Wilxocon rank sum test   
+ -Kruskal-Wallis test   
 
 ---- 
 
