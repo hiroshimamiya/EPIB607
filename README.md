@@ -25,11 +25,12 @@ Basic understanding of Algebra and Calculus is helpful but not required.
 While not required, basic skills in statistical programming (preferably R statistical software) are critical, as the course uses a large number of analysis and visualization examples using R statistical software. Students are strongly suggested to take the companion course EPIB613, Intro to Statistical Software.   
 
 ## Learning Objectives
-The aim of this course is to provide students with basic principles of statistical inference applicable to clinical and epidemiologic research so that you can; 
-(i) Understand how statistical methods are used in research papers and thus evaluate the quality of quantitative health science papers, 
-(ii) Apply statistical methods in your own research, 
- effectively communicate quantitative results from your analysis 
-(iii) Use the methods learned in this course as a foundation for more advanced biostatistics and epidemiology courses.  
+The aim of this course is to provide students with basic principles of statistical inference applicable to clinical and epidemiologic research so that you can;   
+
+  - Understand how statistical methods are used in research papers and thus evaluate the quality of quantitative health science papers,   
+-  Apply statistical methods in your own research,   
+-  Effectively communicate quantitative results from your analysis 
+-  Use the methods learned in this course as a foundation for more advanced biostatistics and epidemiology courses.  
 
 
 ## Course time and location
