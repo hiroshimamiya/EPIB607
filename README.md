@@ -126,15 +126,17 @@ Part 6. Regression and correlation
   - Pearson’s correlation  
   - Difference between correlation and regression  
   - Spearman’s correlation  
-  - Kendall’s tau    
+  - Kendall’s tau      
+
+  
+Part 7 Nonparametric statistics (optional, if time permits  
+  -CI for median    
+  - Wilcoxon signed rank test   
+  - Friedman test  
+  -Mann-Whitney/Wilxocon rank sum test   
+  -Kruskal-Wallis test
 
 
-Part 7 Nonparametric statistics (optional, if time permits)	     
-    -CI for median   
-    -  Wilcoxon signed rank test   
-     - Friedman test  
-     -Mann-Whitney/Wilxocon rank sum test   
-     -Kruskal-Wallis test
 
 
 
