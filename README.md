@@ -19,9 +19,6 @@ McGill University is located on the unceded territory of the Kanien’keha:ka, w
 
 ## Prerequisites
 Being in the first year of an M.Sc or Ph.D. in the Epidemiology, Public Health, or Occupational Health program, or having permission from the instructor if you are from other departments.      
-
-Basic understanding of Algebra and Calculus is helpful but not required.   
-
 While not required, basic skills in statistical programming (preferably R statistical software) are critical, as the course uses a large number of analysis and visualization examples using R statistical software. Students are strongly suggested to take the companion course EPIB613, Intro to Statistical Software.   
 
 ## Learning Objectives
@@ -36,10 +33,10 @@ The aim of this course is to provide students with basic principles of statistic
 ## Course time and location
 8:35AM - 10:25AM	
 Education Building 129	
-Aug 28, 2024 - Dec 04, 2024	
+Aug 29, 2024 - Dec 04, 2024	
 
 
-## Office hours 
+# Office hours 
 By appointment with the instructor, in-person or zoom
 
 ### TA office hours
@@ -53,7 +50,8 @@ Thursdays 2 p.m. to 3:15 p.m. dates and time will be posted on myCourses. All of
 When sending an email please include in the subject heading (EPIB-607 – Inferential
 Statistics). It will be primarily the responsibility of the TAs to respond to emails and every effort will be made to respond as soon as possible. Please be aware responses to emails received after 5 p.m EDT/EST or on weekends may be delayed. For questions related to assignments, remember to email well in advance of the due date. Please be sure to only use your McGill institutional email for communications with the instructor and the TAs
 
-## Reading materials and lectures 
+
+# Reading materials and lectures 
 Class notes are available through MyCourses. If you do not have a personal computer to access the materials, please get in touch with the instructor. 
 
 There is no required textbook. However, the lecture will follow the recommended book below: 
@@ -65,7 +63,7 @@ By David S. Moore; George P. McCabe; Bruce Craig
 ## Software
 There will be in-class illustrations using R software.  
 
-## Grading Scheme
+# Grading Scheme
 Assignment | Grade | Date
 -----------|-------|------------------------
 Assignment 1-5 |20%| 
@@ -84,26 +82,15 @@ The Midterm and final exams are in-person. You are allowed to bring a cheatsheet
 
 
 Assignments (20%): There will be 5 assignments during the term. Assignments must be uploaded to
-myCourses as a pdf before the specified date/time due. Do not upload assignment in Word, or as JPEG
-or any format other than pdf. Assignments uploaded in any format other than a pdf will not be marked.
-Note that assignments do not have to be completed R markdown. You can use word application  as long as they are legible and submitted as a pdf document. Late assignments will not be
-accepted. 
+myCourses as a pdf before the specified date/time due. Do not upload assignment in Word, or as JPEG or any format other than pdf. Assignments uploaded in any format other than a pdf will not be marked. Note that assignments do not have to be completed R markdown. You can use word application  as long as they are legible and submitted as a pdf document. Late assignments will not be accepted. 
 
+Midterm Exam (25%). There will be a closed book exam, during class time (2 hours) that will take place on  (TBA). Please arrive at class on time ready to start your exam.
 
-Midterm Exam (25%). There will be a closed book exam, during class time (1 hour and 30 minutes
-duration) that will take place on Wednesday October 18th, 2023. Please see above for the note about the
-crib sheet. Please arrive at class on time ready to start your exam at 1:35 p.m. The midterm exam will be
-graded by the instructor and the TAs. If you are unable to attend the Midterm exam, there will not be a
-make up exam and your final grade will be computed according to Option 2, below.
-
-
-Final Exam (60%). There will be a closed book 3-hour final exam that will take place during the exam
-period on Monday December 11th 2023. The location to be determined. The final exam will cover
-material from the whole course and will be graded by the instructor and the TAs. Please see above for
-the note about the crib sheet.
+Final Exam (%). There will be a closed book 3-hour final exam that will take place during the exam period on. 
+The location to be determined. The final exam will cover material from the whole course and will be graded by the instructor and the TAs. 
 
 ## Accommodations for missed assignments
-If you need to seek accommodation for missing in-course exams and assignments, medical or non-medical, please discuss the situation with the instructor at least one week before the original assignment due/exam date, with valid and demonstratable reasons. Urgent (within one week) request for accommodation, again with valid and demonstratable reasons, will be handled case-by-case. You are also encouraged to contact the SAA above when requesting any accommodations. 
+If you need to seek accommodation for missing in-course exams and assignments due to medical or non-medical, please discuss the situation with the instructor at least one week before the original assignment due/exam date, with valid and demonstratable reasons. Urgent (within one week) request for accommodation, again with valid and demonstratable reasons, will be handled case-by-case. You are also encouraged to contact the SAA above when requesting any accommodations. 
 
 Deferrals are not permitted for the midterm exam.
 
