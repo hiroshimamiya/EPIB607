@@ -130,11 +130,13 @@ Part 6. Regression and correlation
 
 
 Part 7 Nonparametric statistics (optional, if time permits)	     
- -CI for median   
- -Wilcoxon signed rank test   
- -Friedman test  
- -Mann-Whitney/Wilxocon rank sum test   
- -Kruskal-Wallis test   
+  -CI for median   
+   -Wilcoxon signed rank test   
+   - Friedman test  
+   -Mann-Whitney/Wilxocon rank sum test   
+   -Kruskal-Wallis test
+
+
 
 ---- 
 
