@@ -67,8 +67,15 @@ The final will be held, (Date TBA), same classroom.
 The Midterm and final exams are in-person. You are allowed to bring a cheatsheet (1 page double sided, A4 size), but not your laptop, smartphone, nor textbook.  
 
 
+
+## Accommodations for missed assignments
+If you need to seek accommodation for missing in-course exams and assignments, medical or non-medical, please discuss the situation with the instructor at least one week before the original assignment due/exam date, with valid and demonstratable reasons. Urgent (within one week) request for accommodation, again with valid and demonstratable reasons, will be handled case-by-case. You are also encouraged to contact the SAA above when requesting any accommodations. 
+
+Deferrals are not permitted for the midterm exam.
+
+
 ---
-## Class Schedule 
+## Materials to cover
 
 Part 1. Introduction	
   - Course description, evaluation
@@ -164,13 +171,6 @@ Note: While the use of generative AI tools is permitted in this class, many clas
 I strive to provide an inclusive learning environment. However, if you experience barriers to learning in this course or have any impairments that could impediment your learning, do not hesitate to discuss them with me and/or the Student Accessibility & Achievement Register with Student Accessibility and Achievement -SAA (you can register at https://www.mcgill.ca/access-achieve/). Eligibility for SAA is: 
 >  Students who are experiencing academic or physical barriers and have a documented disability, mental health condition,chronic health condition, or other impairment. These may be temporary, permanent, or episodic.
 > Students with documented disabilities can register at any point in the year, but we recommend registering as early as possible. We encourage students new to McGill to make an appointment before their semester begins.* 
-
-
-## Accommodations for missed assignments
-If you need to seek accommodation for missing in-course exams and assignments, medical or non-medical, please discuss the situation with the instructor at least one week before the original assignment due/exam date, with valid and demonstratable reasons. Urgent (within one week) request for accommodation, again with valid and demonstratable reasons, will be handled case-by-case. You are also encouraged to contact the SAA above when requesting any accommodations. 
-
-Deferrals are not permitted for the midterm exam.
-
 
 ## Language of assessment 
 In accordance with McGill University’s Charter of Students’ Rights, students in this course have the 
