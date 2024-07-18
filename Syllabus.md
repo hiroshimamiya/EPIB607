@@ -46,6 +46,9 @@ material. Office hours will be offered weekly in person by the TAs (Dates and ti
 Office hours will be offered weekly in person by the TAs on §Tuesdays 1 p.m. to 2:15 p.m. and
 Thursdays 2 p.m. to 3:15 p.m. dates and time will be posted on myCourses. All office hours will take place in 2011 McGill College. There will be a few exceptions to the schedule/location of office hours and these will be posted on myCourses.
 
+### Graders
+All assignments will be graded by graders. They do not have any contacts with students. 
+
 ### Email
 When sending an email please include in the subject heading (EPIB-607 – Inferential
 Statistics). It will be primarily the responsibility of the TAs to respond to emails and every effort will be made to respond as soon as possible. Please be aware responses to emails received after 5 p.m EDT/EST or on weekends may be delayed. For questions related to assignments, remember to email well in advance of the due date. Please be sure to only use your McGill institutional email for communications with the instructor and the TAs
@@ -70,13 +73,14 @@ In addition to class notes, I will also upload
 
 ## Required equipment
   - A calculator with square root, log and exponential functions
-  - Laptop
-  - 
+  - A computer to access myCourses
+
 
 
 ## Software
-There will be in-class illustrations using R software. 
-Many examples contain R codes and public data so that you can replicate the analysis. The codes are avaialble in  
+There will be in-class illustrations using R software.    
+Many examples contain R codes and public data so that you can replicate the analysis. The codes are avaialble in: https://github.com/hiroshimamiya/EPIB607/tree/main/Codes  
+but also often pasted to lecture slides.   
 
 
 
