@@ -22,9 +22,9 @@ Being in the first year of an M.Sc or Ph.D. in the Epidemiology, Public Health, 
 While not required, basic skills in statistical programming (preferably R statistical software) are critical, as the course uses a large number of analysis and visualization examples using R statistical software. Students are strongly suggested to take the companion course EPIB613, Intro to Statistical Software.   
 
 ## Learning Objectives
-The aim of this course is to provide students with basic principles of statistical inference applicable to clinical and epidemiologic research so that you can;   
+The aim of this course is to provide students with basic principles of statistical inference applicable to study design and data analysis in population health science;   
 
-  - Understand how statistical methods are used in research papers and thus evaluate the quality of quantitative health science papers,   
+- Understand how statistical methods are used in research papers and news media and thus evaluate their validity and credibility  
 -  Apply statistical methods in your own research,   
 -  Effectively communicate quantitative results from your analysis 
 -  Use the methods learned in this course as a foundation for more advanced biostatistics and epidemiology courses.  
@@ -60,8 +60,25 @@ Introduction to the Practice of Statistics
 Tenth  Edition (2021) 
 By David S. Moore; George P. McCabe; Bruce Craig
 
+In addition to class notes, I will also upload
+
+-  Assignments 
+-  Exam and assignment solutions
+-  Supplementary reading questions
+-  Questions commonly raised by students
+
+
+## Required equipment
+  - A calculator with square root, log and exponential functions
+  - Laptop
+  - 
+
+
 ## Software
-There will be in-class illustrations using R software.  
+There will be in-class illustrations using R software. 
+Many examples contain R codes and public data so that you can replicate the analysis. The codes are avaialble in  
+
+
 
 # Grading Scheme
 Assignment | Grade | Date
