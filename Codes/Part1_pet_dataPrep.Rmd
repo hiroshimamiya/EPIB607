@@ -54,8 +54,7 @@ petSurvey <- petSurvey %>%
 
 petSurvey$SRStress <- factor(petSurvey$SRStress, levels = c("Not at all", "Not very", "A bit", "Quite a bit", "Extremely"))
 
-write.csv(petSurvey, "../Data/Pet/Part1_dataset_pet_covid.csv ")
-write.csv(petSurvey, "../../EPIB607_2024/Data/Part1_dataset_pet_covid.csv ")
+write.csv(petSurvey, "../Data/Part1_dataset_pet_covid.csv ")
 ```
 
 ```{r}
