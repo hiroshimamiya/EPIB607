@@ -1,0 +1,81 @@
+---
+title: "Part1_Pet (EPIB607)"
+author: "H"
+date: "2024-07-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+
+```
+
+
+```{r load and rename data, echo=FALSE}
+# Load data - casen sensitive
+petSurvey <- read.delim("https://dataverse.harvard.edu/api/access/datafile/5244752", sep =   "\t")
+# Data are provided by researchers in UdeMontreal
+#https://dataverse.harvard.edu/file.xhtml?fileId=5244752&version=5.1
+
+
+#number of people surveyd - count row 
+nrow(petSurvey)
+# number of variables - count columns
+ncol(petSurvey)
+
+# Columns (variable names are criptic, so change to more intuitive name)
+petSurvey <- petSurvey %>% 
+  rename(
+    Province = D2, 
+    petOwn = O1,
+    changePetOwn = O8b,
+    petAttitude = P1,
+    age = D1,
+    education = D5,
+    ethnicity = D67,
+    gender = D4,
+    familySize = D11,
+    incomeLevel = D8,
+    changeIncome = E3,
+    disability = H2,
+    mentalHealth = H1Ax,
+    changeMentalHealth = H4,
+    testPositiveCOVID = H56,
+    socialSupport = S,
+    qualityLife = QOL,
+    SRHealth = GH,
+    loneliness = L1,
+    SRMentalHealth = H3,
+    SRStress = Q2,
+    anxiety = Q1_cat
+)
+
+petSurvey$SRStress <- factor(petSurvey$SRStress, levels = c("Not at all", "Not very", "A bit", "Quite a bit", "Extremely"))
+
+write.csv(petSurvey, "../Data/Pet/Part1_dataset_pet_covid.csv ")
+write.csv(petSurvey, "../../EPIB607_2024/Data/Part1_dataset_pet_covid.csv ")
+```
+
+```{r}
+petSurvey %>% select(qualityLife, SRStress, petOwn, familySize, incomeLevel) %>% head(10)
+
+
+
+# Summarize first 
+hist(petSurvey[petSurvey$petOwn == "Yes", "qualityLife"], 
+     main = "Histogram showing the distribution of Self-reported \n Quality of Life (QOL) measure in Canada,\n during the pandemic, 1,500 participants", xlab = "Quality of life metric", sub = "Data Source: Robichaud et al (2021) https://doi.org/10.7910/DVN/JKDKWY")
+median(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"])
+
+
+
+
+petSurvey %>%  
+  group_by(SRStress) %>% 
+  summarize(Percnt= round(n()/nrow(petSurvey)*100, 2)) %>% 
+  data.frame()
+
+
+
+```
