@@ -18,8 +18,11 @@ McGill University is located on the unceded territory of the Kanien’keha:ka, w
 **Restriction(s)**: Open to students who have not completed an intro statistics course in applied health science.
 
 ## Prerequisites
-Being in the first year of an M.Sc or Ph.D. in the Epidemiology, Public Health, or Occupational Health program, or having permission from the instructor if you are from other departments.      
-While not required, basic skills in statistical programming (preferably R statistical software) are critical, as the course uses a large number of analysis and visualization examples using R statistical software. Students are strongly suggested to take the companion course EPIB613, Intro to Statistical Software.   
+Being in the first year of an M.Sc or Ph.D. in the Epidemiology, Public Health, or Occupational Health program, or having permission from the instructor if you are from other departments and like to learn applied biostatistics, EPIB 507 and EPIB 521 are the primary alternative to this course.
+
+While not required, basic skills in statistical programming (preferably R statistical software) are critical, as the course uses a large number of analysis and visualization examples using R statistical software. Students are suggested to take the companion course EPIB613, Intro to Statistical Software.   
+
+
 
 ## Learning Objectives
 The aim of this course is to provide students with basic principles of statistical inference applicable to study design and data analysis in population health science;   
@@ -31,9 +34,9 @@ The aim of this course is to provide students with basic principles of statistic
 
 
 ## Course time and location
-8:35AM - 10:25AM	
-Education Building 129	
-Aug 29, 2024 - Dec 04, 2024	
+8:35AM - 10:25AM
+Education Building 129
+Aug 29, 2024 - Dec 04, 2024
 
 
 # Office hours 
@@ -43,15 +46,15 @@ By appointment with the instructor, in-person or zoom
 The Teaching Assistants (TAs) are your first point of contact for questions about the course
 material. Office hours will be offered weekly in person by the TAs (Dates and time TBA). All office hours will take place in 2011 McGill College. 
 
-Office hours will be offered weekly in person by the TAs on §Tuesdays 1 p.m. to 2:15 p.m. and
-Thursdays 2 p.m. to 3:15 p.m. dates and time will be posted on myCourses. All office hours will take place in 2011 McGill College. There will be a few exceptions to the schedule/location of office hours and these will be posted on myCourses.
+Office hours will be offered weekly in person by the TAs on  ZZZ p.m. to ZZZ p.m. and
+ ZZZ p.m. to ZZZ p.m. dates and time will be posted on myCourses. All office hours will take place in 2011 McGill College. There will be a few exceptions to the schedule/location of office hours and these will be posted on myCourses.
 
 ### Graders
 All assignments will be graded by graders. They do not have any contacts with students. 
 
 ### Email
 When sending an email please include in the subject heading (EPIB-607 – Inferential
-Statistics). It will be primarily the responsibility of the TAs to respond to emails and every effort will be made to respond as soon as possible. Please be aware responses to emails received after 5 p.m EDT/EST or on weekends may be delayed. For questions related to assignments, remember to email well in advance of the due date. Please be sure to only use your McGill institutional email for communications with the instructor and the TAs
+Statistics). It will be primarily the responsibility of the TAs to respond to emails and every effort will be made to respond as soon as possible. Please be aware responses to emails received after 5 p.m EDT/EST or on weekends may be delayed. For questions related to assignments, remember to email well in advance of the due date. Please be sure to only use your McGill institutional email for communications with the instructor and the TAs. 
 
 
 # Reading materials and lectures 
@@ -66,14 +69,14 @@ By David S. Moore; George P. McCabe; Bruce Craig
 In addition to class notes, I will also upload
 
 -  Assignments 
--  Exam and assignment solutions
--  Supplementary reading questions
--  Questions commonly raised by students
+-  Exam and assignment solutions. 
+-  Supplementary reading questions. 
+-  Questions commonly raised by students. 
 
 
 ## Required equipment
-  - A calculator with square root, log and exponential functions
-  - A computer to access myCourses
+  - A calculator with square root, log and exponential functions. 
+  - A computer to access myCourses. 
 
 
 
@@ -153,7 +156,7 @@ Par 4. Inference for means
  - t distribution, t-tests
  - Confidence intervals & hypothesis testing for a single mean, variance unknown
  - Paired & unpaired samples
- - Confidence intervals & hypothesis testing for a two samples (paired and unpaired data 
+ - Confidence intervals & hypothesis testing for two samples (paired and unpaired data 
       equal variance, unpaired data unequal variance) 
 
 Part 5. Inference for proportions and counts      
@@ -179,7 +182,7 @@ Part 6. Regression and correlation
   - Kendall’s tau      
 
   
-Part 7 Nonparametric statistics (optional, if time permits  
+Part 7 Nonparametric statistics(optional, if time permits)  
   - CI for median    
   - Wilcoxon signed rank test   
   - Friedman test  
@@ -194,7 +197,7 @@ Part 7 Nonparametric statistics (optional, if time permits
 
 # Policy around the use of AI technologies for class assignments
 Generative AI is a type of artificial intelligence that uses machine learning to create new types of media, including text, images, software codes, sound, and video in response to user prompts (inputs). Many tools exist that use generative AI to create new content. 
-Some examples include ChatGPT and Bing (text generation) and Midjourney and DALL-E (image generation).   
+Some examples include ChatGPT and Bing.   
 
 Use of these tools to complete assignments and presentations is permitted as part of learning aids, as long as the three conditions are met:    
 
