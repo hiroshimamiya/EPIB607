@@ -57,24 +57,55 @@ petSurvey$SRStress <- factor(petSurvey$SRStress, levels = c("Not at all", "Not v
 write.csv(petSurvey, "../Data/Part1_dataset_pet_covid.csv ")
 ```
 
+
+# Data exploration 
 ```{r}
-petSurvey %>% select(qualityLife, SRStress, petOwn, familySize, incomeLevel) %>% head(10)
+#Display data first#
+petSurvey %>% select(qualityLife, SRStress, petOwn, familySize, incomeLevel, SRMentalHealth, SRHealth) %>% head(10)
+
+
+```
+
+Summarizing numerical(quantitative) data - stem plot 
+```{r}
 
 
 
-# Summarize first 
+
+```
+
+
+
+
+Summarizing numerical(quantitative) data - histogram 
+```{r}
+# Histogram of continuous data 
 hist(petSurvey[petSurvey$petOwn == "Yes", "qualityLife"], 
+     main = "Histogram showing the distribution of Self-reported \n Quality of Life (QOL) measure in Canada,\n during the pandemic, 1,500 participants", 
+     xlab = "Quality of life metric", 
+     sub = "Data Source: Robichaud et al (2021) https://doi.org/10.7910/DVN/JKDKWY")
+
+median(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"])
+mean(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"])
+
+
+
+# Histogram of discrete data 
+hist(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"], 
      main = "Histogram showing the distribution of Self-reported \n Quality of Life (QOL) measure in Canada,\n during the pandemic, 1,500 participants", xlab = "Quality of life metric", sub = "Data Source: Robichaud et al (2021) https://doi.org/10.7910/DVN/JKDKWY")
 median(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"])
 
 
 
 
-petSurvey %>%  
-  group_by(SRStress) %>% 
-  summarize(Percnt= round(n()/nrow(petSurvey)*100, 2)) %>% 
-  data.frame()
+```
 
 
+Summarizing categorical data 
+```{r}
+
+age 
+pet own 
+income 
 
 ```
