@@ -82,6 +82,10 @@ petSurvey %>% select(qualityLife,
          ) %>% 
   head(10)
 
+hist(petSurvey$familySize)
+
+
+petSurvey %>% group_by(familySize) %>% summarize(n = .n)
 
 ```
 
@@ -390,7 +394,21 @@ hist(x, main="Household income from a hypohhetical population, by 10K \n some pe
 dev.off()
 mean(x)
 median(x)
+# Histogram of discrete data 
+hist(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"], 
+     main = "Histogram showing the distribution of Self-reported \n Quality of Life (QOL) measure in Canada,\n during the pandemic, 1,500 participants", 
+     xlab = "Quality of life metric", 
+     sub = "Data Source: Robichaud et al (2021) https://doi.org/10.7910/DVN/JKDKWY")
 
+
+median(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"])
+mean(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"])
+
+
+
+# Stem and leaf plot 
+stem(petSurvey[petSurvey$petOwn == "Yes", "qualityLife"])
+median(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"])
 
 
 
