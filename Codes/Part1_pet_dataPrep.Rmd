@@ -61,7 +61,8 @@ petSurvey <- petSurvey %>%
 
 petSurvey$SRStress <- factor(petSurvey$SRStress, levels = c("Not at all", "Not very", "A bit", "Quite a bit", "Extremely"))
 
-write.csv(petSurvey, "Data/Part1_dataset_pet_covid.csv")
+# If needed, save the file to your computer 
+write.csv(petSurvey, file = "Data/Part1_dataset_pet_covid.csv", append = FALSE)
 ```
 
 
@@ -124,6 +125,41 @@ petSurvey$SRMentalHealth %>%
           Y axis (height) is proportion, not count 
           Multiply by 100 to make them percent
           ", sub = "Data source: Robichaud (2021) ")
+
+
+
+petSurvey$SRMentalHealth %>% 
+  table %>% 
+  prop.table() %>%
+  barplot(main = "\n  Self-reported stress level during pandemic from the sample in the pet study 
+          Y axis (height) is proportion, not count 
+          Multiply by 100 to make them percent
+          ", sub = "Data source: Robichaud (2021) ")
+
+
+petSurvey$incomeLevel <- factor(petSurvey$incomeLevel, levels = c("$19,999 or less", "$20,000-$39,999",   "$40,000-$59,000", "$60,000-$79,999" , "$80,000-$99,999",  "$100,000-$119,999" ,  "$120,000 or more", "Prefer not to answer"))
+
+
+
+png("../EPIB607Notes2012/Part1Figs/barGraph_income.png", width = 1200, height = 800, units = "px",  res = 150)
+  par(mar=c(3,10,3,3))
+  petSurvey$incomeLevel %>% 
+    table %>% 
+    prop.table() %>%  barplot(main = "\n  Self-reported income chosen from ranges" , horiz = TRUE, las = 1)
+dev.off()
+
+
+
+png("../EPIB607Notes2012/Part1Figs/barGraph_educ.png", width = 800, height = 800, units = "px",  res = 150)
+  par(mar=c(10,3,3,3))
+  petSurvey$education %>% 
+    table %>% 
+    prop.table() %>%  barplot(main = "\n  Self-reported education category " , las = 3)
+dev.off()
+
+
+
+
 ```
 
 
@@ -138,6 +174,8 @@ tableHTML(round(tb, 2), headers = c("Self-reported Mental Health", "Gender", "Pe
 
 barplot(tb, beside=TRUE, ylab="Frequency (%)", col=c("red", "blue", "green"), ylim = c(0,20), xlab = "Self-reported Mental Health") 
 legend("topright", legend=c("Male", "Other or no answer", "Women"),  fill=c("red", "blue", "green"))
+
+
 
 
 ```
@@ -281,31 +319,23 @@ dev.off()
 ### Density
 ```{r}
 
-x <- rnorm(mean = 3.8, sd = 0.5, n = 30) %>% round(2)
-hist(x, freq = FALSE, 
-        main = "Density plot and hisrogram for small sample, birth weight (n=50 subjects)", 
-        xlab = "weight in Kg", 
-        breaks = 10)
-lines(density(x), lwd = 2, col = "red")
-
-  # Add density
-
 
 set.seed(1)
-png("../EPIB607Notes2012/Part1Figs/densityWgt.png", width = 1000, height = 500, units = "px",  res = 150)
+png("../EPIB607Notes2012/Part1Figs/densityWgt_combined.png", width = 1200, height = 600, units = "px",  res = 150)
+par(mfrow=c(1,2))
   x <- rnorm(mean = 3.8, sd = 0.5, n = 300) %>% round(2)
    hist(x, freq = FALSE, 
-        main = "Hypothetical birth weight of girls, n=300 subjects", 
+        main = "Hypothetical birth weight of girls, 
+        n=300 subjects", 
         xlab = "weight in Kg", 
         breaks = 10)
   # Add density
   lines(density(x), lwd = 2, col = "red")
-dev.off()
 
 
-png("../EPIB607Notes2012/Part1Figs/densityWgt2.png", width = 1000, height = 500, units = "px",  res = 150)
 x <- rnorm(mean = 3.8, sd = 0.5, n = 30) %>% round(2)
-hist(x, main = "birthweight of babies in kg, small sample (n=30", freq = F, ylim = c(0,1))
+hist(x, main = "birthweight of babies in kg, small sample 
+     n=30 subjects", freq = F, ylim = c(0,1))
 lines(density(x), col = "red", lwd = 1.5)
 dev.off()
 
@@ -314,10 +344,38 @@ dev.off()
 
 
 
+## barplot vs histrogram: 
+```{r}
+set.seed(1)
+png("../EPIB607Notes2012/Part1Figs/Bar_hist_combined.png", width = 1000, height = 600, units = "px",  res = 150)
+par(mfrow=c(1,2))
+  x <- rnorm(mean = 3.8, sd = 0.5, n = 300) %>% round(2)
+   hist(x, freq = FALSE, 
+        main = "Hypothetical birth weight of girls", 
+        xlab = "weight in Kg", 
+        breaks = 10)
+  # Add density
+  lines(density(x), lwd = 2, col = "red")
+
+
+  petSurvey$SRMentalHealth %>% 
+  table %>% 
+  prop.table() %>%
+  barplot(main = "\n  Self-reported stress level ")
+dev.off()
+
+```
+
 
 
 # Boxplot VS Histogram 
 ```{r}
+
+
+png("../EPIB607Notes2012/Part1Figs/box_horizontal.png", width = 1000, height = 500, units = "px",  res = 150)
+    boxplot(petSurvey$SRHealth, main = "Boxplot - Self-asessed helath", xlab = "Self-asessed health")
+dev.off()
+
 
 
 png("../EPIB607Notes2012/Part1Figs/box.png", width = 800, height = 800, units = "px",  res = 150)
