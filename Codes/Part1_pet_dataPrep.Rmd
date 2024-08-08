@@ -9,6 +9,12 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(ggplot2)
+library(tableHTML)
+library(gridExtra)
+
+saveImage <- "../EPIB607Notes2012/Part1Figs/"
+
+
 
 ```
 
@@ -54,22 +60,82 @@ petSurvey <- petSurvey %>%
 
 petSurvey$SRStress <- factor(petSurvey$SRStress, levels = c("Not at all", "Not very", "A bit", "Quite a bit", "Extremely"))
 
-write.csv(petSurvey, "../Data/Part1_dataset_pet_covid.csv ")
+write.csv(petSurvey, "Data/Part1_dataset_pet_covid.csv")
 ```
 
 
-# Data exploration 
+### Part 1.1 Data exploration - Categorical and Quantitative variables 
 ```{r}
-#Display data first#
-petSurvey %>% select(qualityLife, SRStress, petOwn, familySize, incomeLevel, SRMentalHealth, SRHealth) %>% head(10)
+#Display data first, all variables horizontally 
+glimpse(petSurvey)
+
+
+
+#Lets pick a set of variables
+petSurvey %>% select(qualityLife, 
+                     SRStress, 
+                     petOwn, 
+                     familySize, 
+                      Province) %>% 
+  rename(myStressLevel = SRStress, 
+         ownPet = petOwn 
+         ) %>% 
+  head(10)
 
 
 ```
 
-Summarizing numerical(quantitative) data - stem plot 
+
+
+
+### Part 1.2:Summarizing numerical(quantitative) data - stem plot 
 ```{r}
+#Lets pick a set of variables
+petSurvey %>% select(qualityLife, 
+  SRStress, 
+  petOwn, 
+  familySize, 
+  Province, 
+  incomeLevel, 
+  age, 
+  loneliness) %>% 
+head(10)
 
 
+# Table 
+petSurvey %>%
+    group_by(Province) %>%
+    summarise(Count = n()) %>%
+    dplyr::mutate(`Frequency(%)` = format(round(Count / sum(Count)*100, 2), nsmall = 2)) %>% 
+  tableHTML(rownames = F)
+
+
+# Bargraph, count
+petSurvey$SRMentalHealth <- factor(petSurvey$SRMentalHealth, levels = c("Poor", "Fair", "Good", "Very good", "Excellent") )
+table(petSurvey$SRMentalHealth) %>% barplot(main = "Self-reported stress level during pandemic from the sample in the pet study", sub = "Data source: Robichaud (2021) ")
+
+#Bargraphi, proportion 
+petSurvey$SRMentalHealth %>% 
+  table %>% 
+  prop.table() %>%
+  barplot(main = "\n  Self-reported stress level during pandemic from the sample in the pet study 
+          Y axis (height) is proportion, not count 
+          Multiply by 100 to make them percent
+          ", sub = "Data source: Robichaud (2021) ")
+```
+
+
+Multiple variables
+```{r}
+tb <- petSurvey %>% 
+  dplyr::select(gender, SRMentalHealth) %>% 
+  table() %>%  
+  prop.table() * 100
+
+tableHTML(round(tb, 2), headers = c("Self-reported Mental Health", "Gender", "Percent"))
+
+barplot(tb, beside=TRUE, ylab="Frequency (%)", col=c("red", "blue", "green"), ylim = c(0,20), xlab = "Self-reported Mental Health") 
+legend("topright", legend=c("Male", "Other or no answer", "Women"),  fill=c("red", "blue", "green"))
 
 
 ```
@@ -77,35 +143,259 @@ Summarizing numerical(quantitative) data - stem plot
 
 
 
-Summarizing numerical(quantitative) data - histogram 
+### Summarizing numerical(quantitative) data - histogram 
 ```{r}
-# Histogram of continuous data 
-hist(petSurvey[petSurvey$petOwn == "Yes", "qualityLife"], 
+
+
+png("../EPIB607Notes2012/Part1Figs/SummarySRHealthHist.png", width = 500, height = 500, units = "px",  res = 150)
+   grid.table(summary(petSurvey$SRHealth) %>% round(2) , rows = c("Minimum", "Q1", "Median", "Mean", "Q3", "Max"))
+dev.off()
+
+
+
+png("../EPIB607Notes2012/Part1Figs/petDataSRHealthHist_5.png", width = 1280, height = 880, units = "px",  res = 150)
+hist(petSurvey$SRHealth, 
+     main = "Histogram showing the distribution of self-reported health in Canada during pandemic", 
+     xlab = "Self-reported Health metric", 
+     sub = "Data Source: Robichaud et al (2021)", 
+     breaks = seq(0, 100,20))
+dev.off()
+
+
+png("../EPIB607Notes2012/Part1Figs/petDataSRHealthHist_comb.png", width = 1280, height = 880, units = "px",  res = 150)
+par(mfrow = c(2,2))
+hist(petSurvey$SRHealth, 
+     main = "Breaks = 2", 
+     xlab = NULL, 
+     breaks = seq(0, 100,50))
+hist(petSurvey$SRHealth, 
+     main = "Breaks = 10", 
+     xlab = NULL, 
+     breaks = seq(0, 100,10))
+hist(petSurvey$SRHealth, 
+     main = "Breaks = 20", 
+     xlab = NULL,  
+     breaks = seq(0, 100,5))
+hist(petSurvey$SRHealth, 
+     main = "Breaks = 100", 
+     xlab = NULL, 
+     breaks = seq(0, 100,1))
+dev.off()
+```
+
+
+### Stem and leaf discrete 
+```{r}
+# stem/leaf plot 
+png("../EPIB607Notes2012/Part1Figs/stem.png", width = 1500, height = 800, units = "px",  res = 150)
+par(mar = c(0,0,0,0))
+plot(c(0, 1), c(0, 1), ann = F, bty = 'n', type = 'n', xaxt = 'n', yaxt = 'n')
+#plot.new()
+tmp <- capture.output(stem(petSurvey$SRHealth, 2))
+text( 0,1, paste(tmp, collapse='\n'), adj=c(0,1), family='mono' )
+dev.off()
+
+
+# stem/leaf plot 
+png("../EPIB607Notes2012/Part1Figs/stem2.png", width = 700, height = 800, units = "px",  res = 150)
+par(mar = c(0,0,0,0))
+plot.new()
+tmp <- capture.output(stem(petSurvey$SRHealth[seq(0,1500, 20)], 2))
+text( 0,1, paste(tmp, collapse='\n'), adj=c(0,1), family='mono' )
+dev.off()
+
+
+png("../EPIB607Notes2012/Part1Figs/histbin10.png", width = 700, height = 800, units = "px",  res = 200)
+hist(petSurvey$SRHealth[seq(0,1500, 20)], main=NULL, xlab = "Health Score")
+dev.off()
+```
+
+
+
+
+### Stem  and leaf numeric 
+```{r}
+# Now, numeric variable - quality of life 
+# stem/leaf plot 
+png("../EPIB607Notes2012/Part1Figs/qualityLife.png", width = 1000, height = 800, units = "px",  res = 150)
+    hist(petSurvey$qualityLife, 
      main = "Histogram showing the distribution of Self-reported \n Quality of Life (QOL) measure in Canada,\n during the pandemic, 1,500 participants", 
      xlab = "Quality of life metric", 
-     sub = "Data Source: Robichaud et al (2021) https://doi.org/10.7910/DVN/JKDKWY")
-
-median(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"])
-mean(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"])
+     sub = "Data Source: Robichaud et al (2021)")
+dev.off()
 
 
 
-# Histogram of discrete data 
-hist(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"], 
-     main = "Histogram showing the distribution of Self-reported \n Quality of Life (QOL) measure in Canada,\n during the pandemic, 1,500 participants", xlab = "Quality of life metric", sub = "Data Source: Robichaud et al (2021) https://doi.org/10.7910/DVN/JKDKWY")
-median(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"])
+
+# stem/leaf plot 
+png("../EPIB607Notes2012/Part1Figs/stemQoL.png", width = 1500, height = 1500, units = "px",  res = 150)
+par(mar = c(0,0,0,0))
+plot.new()
+#plot.new()
+tmp <- capture.output(stem(petSurvey$qualityLife, 2))
+text( 0,1, paste(tmp, collapse='\n'), adj=c(0,1), family='mono' )
+dev.off()
+```
 
 
 
+### Bell and skewed
+```{r}
+# Histogram, IQ simulated 
+png("../EPIB607Notes2012/Part1Figs/IQhist.png", width = 900, height = 900, units = "px",  res = 150)
+  rnorm(mean = 110, sd = 15, n = 1500) %>% 
+   hist(main = "Histgram of IQ test scores (discrete) from a hypothetical population \n rougly *Bell-Shapred*", 
+        xlab = "IQ Test SCore from a hypothetical population")
+dev.off()
+
+
+
+# RIght-skwed proprtion, 
+
+hist(rbeta(10000,1,5), main="Right Skewness", freq=FALSE)
+lines(density(x), col='red', lwd=3)
+
+
+png("../EPIB607Notes2012/Part1Figs/skew_comb.png", width = 1600, height = 700, units = "px",  res = 150)
+  par(mfrow = c(1,2))
+  hist(rnorm(mean = 7, 
+    sd = 3, 
+    n = 2000)^2, 
+    breaks = 15, 
+    main = "Sales of junk food (soda) by 350ml in \n a convenience store", 
+    xlab = "Sales volume") 
+  
+  hist(petSurvey$qualityLife, 
+    main = "Self-reported Quality of Life (QOL)\n", 
+    xlab = "Quality of life metric")
+  
+dev.off()
 
 ```
 
 
-Summarizing categorical data 
+
+
+### Density
+```{r}
+# Histogram, IQ simulated 
+png("../EPIB607Notes2012/Part1Figs/IQhist.png", width = 900, height = 900, units = "px",  res = 150)
+  rnorm(mean = 110, sd = 15, n = 1500) %>% 
+   hist(main = "Histgram of IQ test scores (discrete) from a hypothetical population \n rougly *Bell-Shapred*", 
+        xlab = "IQ Test SCore from a hypothetical population")
+dev.off()
+```
+
+
+
+
+
+# Boxplot VS Histogram 
 ```{r}
 
-age 
-pet own 
-income 
+
+png("../EPIB607Notes2012/Part1Figs/box.png", width = 800, height = 800, units = "px",  res = 150)
+    boxplot(petSurvey$SRHealth, main = "Boxplot - Self-asessed helath", ylab = "Self-asessed health")
+dev.off()
+
+
+png("../EPIB607Notes2012/Part1Figs/boxHist_Qol.png", width = 1600, height = 800, units = "px",  res = 150)
+par(mfrow = c(1,2))
+    hist(petSurvey$qualityLife, 
+     main = "Histogram - quality of life")
+    boxplot(petSurvey$qualityLife, main = "Boxplot - quality of life", ylab = "Quality of life")
+dev.off()
+
+png("../EPIB607Notes2012/Part1Figs/boxHist_SRH.png", width = 1600, height = 800, units = "px",  res = 150)
+par(mfrow = c(1,2))
+    hist(petSurvey$SRHealth, 
+     main = "Histogram - Health score")
+    boxplot(petSurvey$SRHealth, main = "Boxplot - Health score", ylab = "Health score")
+dev.off()
+
+
+png("../EPIB607Notes2012/Part1Figs/boxHist_IQ.png", width = 1600, height = 800, units = "px",  res = 150)
+par(mfrow = c(1,2))
+    x <- rnorm(mean = 110, sd = 15, n = 1500) 
+   hist(x, main = "Histgram of IQ test scores", 
+        xlab = "IQ Test SCore")
+    boxplot(x, main = "Boxplot - IQ test score", ylab = "IQ test score")
+dev.off()
 
 ```
+
+# Boxplot by category 
+```{r}
+
+# Histogram of health score (discrete), by owndership 
+png("../EPIB607Notes2012/Part1Figs/box_Health_pet.png", width = 900, height = 900, units = "px",  res = 150)
+boxplot(data = petSurvey, SRHealth ~ petOwn, xlab = "petOwnership", ylab = "Self-asessed health score")
+dev.off()
+
+
+
+png("../EPIB607Notes2012/Part1Figs/Hist_SR_PetOwn.png", width = 1600, height = 800, units = "px",  res = 150)
+par(mfrow = c(1,2))
+    hist(petSurvey[petSurvey$petOwn == "Yes","SRHealth"], main = "Histogram - Health score \n Among pet owner", xlab = "Health score" )
+    hist(petSurvey[petSurvey$petOwn == "No","SRHealth"], main = "Histogram - Health score \n Among no pet owner", xlab = "Health score")
+dev.off()
+
+```
+
+
+# Simualted data, and outlier 
+```{r}
+
+set.seed(1)
+png("../EPIB607Notes2012/Part1Figs/densityWgt.png", width = 1000, height = 500, units = "px",  res = 150)
+  x <- rnorm(mean = 3.8, sd = 0.5, n = 300) %>% round(2)
+   hist(x, freq = FALSE, 
+        main = "Hypothetical birth weight of girls \n in your study sample", 
+        xlab = "weight in Kg", 
+        breaks = 10)
+  # Add density
+  lines(density(x), lwd = 2, col = "red")
+dev.off()
+
+
+png("../EPIB607Notes2012/Part1Figs/densityWgt2.png", width = 1000, height = 500, units = "px",  res = 150)
+x <- rnorm(mean = 3.8, sd = 0.5, n = 30) %>% round(2)
+hist(x, main = "birthweight of babies in kg", freq = F, ylim = c(0,1))
+lines(density(x), col = "red", lwd = 1.5)
+dev.off()
+
+#add outlier 
+x <- c(x, 30)
+
+mean(x)
+median(x)
+
+x[-31] -> x
+
+x <- c(x,80)
+
+mean(x)
+median(x)
+
+
+
+
+
+# Income disbition, simulated 
+png("../EPIB607Notes2012/Part1Figs/incomeSim.png", width = 1000, height = 600, units = "px",  res = 150)
+x = rlnorm(1000, 1, 0.5)
+x <- c(x, 45, 45, 45)
+hist(x, main="Household income from a hypohhetical population, by 10K \n some people make excessive income ", freq=F, breaks = 20, xlab = "income by 10k")
+#lines(density(x), col='red', lwd=3)
+dev.off()
+mean(x)
+median(x)
+
+
+
+
+```
+
+
+
+
