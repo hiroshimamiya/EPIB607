@@ -18,7 +18,8 @@ saveImage <- "../EPIB607Notes2012/Part1Figs/"
 
 ```
 
-
+## Part 1 Data exploration - Categorical and Quantitative variables 
+## Load data 
 ```{r load and rename data, echo=FALSE}
 # Load data - casen sensitive
 petSurvey <- read.delim("https://dataverse.harvard.edu/api/access/datafile/5244752", sep =   "\t")
@@ -64,14 +65,14 @@ write.csv(petSurvey, "Data/Part1_dataset_pet_covid.csv")
 ```
 
 
-### Part 1.1 Data exploration - Categorical and Quantitative variables 
+### Quickly display data 
 ```{r}
 #Display data first, all variables horizontally 
 glimpse(petSurvey)
 
 
 
-#Lets pick a set of variables
+#Lets pick a set of variables and display 
 petSurvey %>% select(qualityLife, 
                      SRStress, 
                      petOwn, 
@@ -82,17 +83,14 @@ petSurvey %>% select(qualityLife,
          ) %>% 
   head(10)
 
-hist(petSurvey$familySize)
 
-
-petSurvey %>% group_by(familySize) %>% summarize(n = .n)
 
 ```
 
 
 
 
-### Part 1.2:Summarizing numerical(quantitative) data - stem plot 
+## Summarizing categorical data - bar plot 
 ```{r}
 #Lets pick a set of variables
 petSurvey %>% select(qualityLife, 
@@ -129,7 +127,7 @@ petSurvey$SRMentalHealth %>%
 ```
 
 
-Multiple variables
+### Barplot - Multiple variables
 ```{r}
 tb <- petSurvey %>% 
   dplyr::select(gender, SRMentalHealth) %>% 
@@ -147,7 +145,7 @@ legend("topright", legend=c("Male", "Other or no answer", "Women"),  fill=c("red
 
 
 
-### Summarizing numerical(quantitative) data - histogram 
+## Summarizing numerical(quantitative) data - histogram 
 ```{r}
 
 
@@ -188,7 +186,7 @@ dev.off()
 ```
 
 
-### Stem and leaf discrete 
+### Stem and leaf plots  - discrete variable  
 ```{r}
 # stem/leaf plot 
 png("../EPIB607Notes2012/Part1Figs/stem.png", width = 1500, height = 800, units = "px",  res = 150)
@@ -217,7 +215,7 @@ dev.off()
 
 
 
-### Stem  and leaf numeric 
+### Stem  and leaf numeric variable 
 ```{r}
 # Now, numeric variable - quality of life 
 # stem/leaf plot 
@@ -243,9 +241,9 @@ dev.off()
 
 
 
-### Bell and skewed
+### Bell and skewed distributions
 ```{r}
-# Histogram, IQ simulated 
+# Histogram, IQ simulated - symmetric 
 png("../EPIB607Notes2012/Part1Figs/IQhist.png", width = 900, height = 900, units = "px",  res = 150)
   rnorm(mean = 110, sd = 15, n = 1500) %>% 
    hist(main = "Histgram of IQ test scores (discrete) from a hypothetical population \n rougly *Bell-Shapred*", 
@@ -282,12 +280,36 @@ dev.off()
 
 ### Density
 ```{r}
-# Histogram, IQ simulated 
-png("../EPIB607Notes2012/Part1Figs/IQhist.png", width = 900, height = 900, units = "px",  res = 150)
-  rnorm(mean = 110, sd = 15, n = 1500) %>% 
-   hist(main = "Histgram of IQ test scores (discrete) from a hypothetical population \n rougly *Bell-Shapred*", 
-        xlab = "IQ Test SCore from a hypothetical population")
+
+x <- rnorm(mean = 3.8, sd = 0.5, n = 30) %>% round(2)
+hist(x, freq = FALSE, 
+        main = "Density plot and hisrogram for small sample, birth weight (n=50 subjects)", 
+        xlab = "weight in Kg", 
+        breaks = 10)
+lines(density(x), lwd = 2, col = "red")
+
+  # Add density
+
+
+set.seed(1)
+png("../EPIB607Notes2012/Part1Figs/densityWgt.png", width = 1000, height = 500, units = "px",  res = 150)
+  x <- rnorm(mean = 3.8, sd = 0.5, n = 300) %>% round(2)
+   hist(x, freq = FALSE, 
+        main = "Hypothetical birth weight of girls, n=300 subjects", 
+        xlab = "weight in Kg", 
+        breaks = 10)
+  # Add density
+  lines(density(x), lwd = 2, col = "red")
 dev.off()
+
+
+png("../EPIB607Notes2012/Part1Figs/densityWgt2.png", width = 1000, height = 500, units = "px",  res = 150)
+x <- rnorm(mean = 3.8, sd = 0.5, n = 30) %>% round(2)
+hist(x, main = "birthweight of babies in kg, small sample (n=30", freq = F, ylim = c(0,1))
+lines(density(x), col = "red", lwd = 1.5)
+dev.off()
+
+
 ```
 
 
@@ -354,7 +376,7 @@ set.seed(1)
 png("../EPIB607Notes2012/Part1Figs/densityWgt.png", width = 1000, height = 500, units = "px",  res = 150)
   x <- rnorm(mean = 3.8, sd = 0.5, n = 300) %>% round(2)
    hist(x, freq = FALSE, 
-        main = "Hypothetical birth weight of girls \n in your study sample", 
+        main = "Hypothetical birth weight of girls", 
         xlab = "weight in Kg", 
         breaks = 10)
   # Add density
@@ -364,7 +386,7 @@ dev.off()
 
 png("../EPIB607Notes2012/Part1Figs/densityWgt2.png", width = 1000, height = 500, units = "px",  res = 150)
 x <- rnorm(mean = 3.8, sd = 0.5, n = 30) %>% round(2)
-hist(x, main = "birthweight of babies in kg", freq = F, ylim = c(0,1))
+hist(x, main = "birthweight of babies in kg, small sample", freq = F, ylim = c(0,1))
 lines(density(x), col = "red", lwd = 1.5)
 dev.off()
 
