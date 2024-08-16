@@ -17,10 +17,10 @@ McGill University is located on the unceded territory of the Kanien’keha:ka, w
 
 # Instructor information   
 Hiroshi Mamiya. PhD   
-Department of Epidemiology, Biostatistics, and Occupational Health
-School of Population and Global Health   
-Faculty of Medicine   
-McGill Univeristy 
+Department of Epidemiology, Biostatistics, and Occupational Health   
+School of Population and Global Health      
+Faculty of Medicine     
+McGill Univeristy    
 
 
 # Course information 
@@ -51,17 +51,18 @@ Aug 29, 2024 - Dec 04, 2024
 
 
 
-# Office hours and communication 
-By appointment with the instructor, in-person or zoom
+# Office hours and communication    
+### Instructor 
+By appointment, in-person or zoom   
 
-### TA office hours
+### TA office hours   
 The Teaching Assistants (TAs) are your first point of contact for questions about the course
 material. Office hours will be offered weekly in person by the TAs (Dates and time TBA). All office hours will take place in 2011 McGill College. 
 
 Office hours will be offered weekly in person by the TAs on  ZZZ p.m. to ZZZ p.m. and
  ZZZ p.m. to ZZZ p.m. dates and time will be posted on myCourses. All office hours will take place in 2011 McGill College. There will be a few exceptions to the schedule/location of office hours and these will be posted on myCourses.
 
-### Email
+### Email   
 When sending an email please include in the subject heading (EPIB-607 – Inferential
 Statistics). It will be primarily the responsibility of the TAs to respond to emails and every effort will be made to respond as soon as possible. Please be aware responses to emails received after 5 p.m EDT/EST or on weekends may be delayed. For questions related to assignments, remember to email well in advance of the due date. Please be sure to only use your McGill institutional email for communications with the instructor and the TAs. 
 
