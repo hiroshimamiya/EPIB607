@@ -16,7 +16,7 @@ McGill University is located on the unceded territory of the Kanien’keha:ka, w
 
 
 # Instructor information   
-Hiroshi Mamiya. PhD
+Hiroshi Mamiya. PhD   
 Department of Epidemiology, Biostatistics, and Occupational Health
 School of Population and Global Health   
 Faculty of Medicine   
