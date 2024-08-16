@@ -114,22 +114,23 @@ The Midterm and final exams are in-person. You are allowed to bring a cheatsheet
 
 
 
-**Assignments (20%)**: There will be 5 assignments during the term. 
-Assignments must be uploaded to myCourses as a pdf before the specified date/time due.      
-Please do not upload assignment in Word, or as JPEG or any format other than pdf. Assignments uploaded in any format other than a pdf will not be marked.    
-Assignments do not have to be completed R markdown. You can use word application as long as they are legible and submitted as a pdf document. Late assignments will not be accepted, unless discussed with the instructor well before the due date (see Accomodation below).    
-The purpose of the assignments is to make you ready for mid-term and final exams, provide oppotunities to apply lecture materials to variety of real-world and conceptual problems, and to provide feedback on your learning progress. 
+**Assignments (20%)**: There will be 5 assignments during the term.       
+ - Assignments must be uploaded to myCourses as a pdf before the specified date/time due.         
+- Please do not upload assignment in Word, or as JPEG or any format other than pdf. Assignments uploaded in any format other than a pdf will not be marked.         
+ - Assignments do not have to be completed R markdown. You can use word application as long as they are legible and submitted as a pdf document. Late assignments will not be accepted, unless discussed with the instructor well before the due date (see Accomodation below).         
+ - The purpose of the assignments is to make you ready for mid-term and final exams, provide oppotunities to apply lecture materials to variety of real-world and conceptual problems, and to provide feedback on your learning progress.      
 
-**Midterm Exam (25%)**. There will be a closed book exam, during class time (2 hours) that will take place on  (TBA). Please arrive at class on time ready to start your exam.   
 
-**Final Exam (50%)**. There will be a closed book 3-hour final exam that will take place during the exam period on.  
-The location to be determined. The final exam will cover material from the whole course and will be graded by the instructor and the TAs. 
-1-page (A4, lettersize) cheatsheet is allowed. Calculator is needed. 
+**Midterm Exam (25%)**. There will be a closed book exam, during class time (2 hours) that will take place on  (TBA). Please arrive at class on time ready to start your exam.     
 
-## Accommodations for missed assignments
-If you need to seek accommodation for missing in-course exams and assignments due to medical or non-medical, please discuss the situation with the instructor at least one week before the original assignment due/exam date, with valid and demonstratable reasons. Urgent (within one week) request for accommodation, again with valid and demonstratable reasons, will be handled case-by-case. You are also encouraged to contact the SAA above when requesting any accommodations. 
+**Final Exam (50%)**. There will be a closed book 3-hour final exam that will take place during the exam period on.    
+The location to be determined. The final exam will cover material from the whole course and will be graded by the instructor and the TAs.   
+1-page (A4, lettersize) cheatsheet is allowed. Calculator is needed.     
 
-Deferrals are not permitted for the midterm exam.
+## Accommodations for missed assignments   
+If you need to seek accommodation for missing in-course exams and assignments due to medical or non-medical, please discuss the situation with the instructor at least one week before the original assignment due/exam date, with valid and demonstratable reasons. Urgent (within one week) request for accommodation, again with valid and demonstratable reasons, will be handled case-by-case. You are also encouraged to contact the SAA above when requesting any accommodations.    
+
+Deferrals are not permitted for the midterm exam.   
 
 
 ---
