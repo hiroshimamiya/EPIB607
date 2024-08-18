@@ -1,5 +1,6 @@
 # EPIB 607: Inferential Statistics (4-Credit)
-Department of Epidemiology, Biostatistics, and Occupational Health as part of core courses   
+2024 Fall   
+Department of Epidemiology, Biostatistics, and Occupational Health
 
 
 # Preamble   
@@ -14,13 +15,23 @@ One out of three students in Canada experience some form of mental health issues
 McGill University is located on the unceded territory of the Kanien’keha:ka, which has long served as a site of meeting and exchange amongst Indigenous peoples,  including the Haudenosaunee and Anishinabeg nations. McGill honors, recognizes, and respects these nations as the traditional stewards of the lands and waters on which we meet today
 
 
+# Instructor information   
+Hiroshi Mamiya. PhD   
+Department of Epidemiology, Biostatistics, and Occupational Health   
+School of Population and Global Health      
+Faculty of Medicine     
+McGill Univeristy    
+
+
 # Course information 
 **Restriction(s)**: Open to students who have not completed an intro statistics course in applied health science.
 
 ## Prerequisites
-Being in the first year of an M.Sc or Ph.D. in the Epidemiology, Public Health, or Occupational Health program, or having permission from the instructor if you are from other departments and like to learn applied biostatistics, EPIB 507 and EPIB 521 are the primary alternative to this course.
+Being in the first year of an M.Sc or Ph.D. in the Epidemiology, Public Health, or Occupational Health program, or having permission from the instructor if you are from other departments and like to learn applied biostatistics.   
+EPIB 507 and EPIB 521 are the primary alternative to this course.    
 
-While not required, basic skills in statistical programming (preferably R statistical software) are critical, as the course uses a large number of analysis and visualization examples using R statistical software. Students are suggested to take the companion course EPIB613, Intro to Statistical Software.   
+While not required, basic skills in statistical programming (preferably R statistical software) are critical, as the course uses a large number of analysis and visualization examples using R statistical software. Students are suggested to take the companion course EPIB613, Intro to Statistical Software.    
+
 
 
 
@@ -39,39 +50,39 @@ Education Building 129
 Aug 29, 2024 - Dec 04, 2024
 
 
-# Office hours 
-By appointment with the instructor, in-person or zoom
 
-### TA office hours
+# Office hours and communication    
+### Instructor 
+By appointment, in-person or zoom   
+
+### TA office hours   
 The Teaching Assistants (TAs) are your first point of contact for questions about the course
 material. Office hours will be offered weekly in person by the TAs (Dates and time TBA). All office hours will take place in 2011 McGill College. 
 
 Office hours will be offered weekly in person by the TAs on  ZZZ p.m. to ZZZ p.m. and
  ZZZ p.m. to ZZZ p.m. dates and time will be posted on myCourses. All office hours will take place in 2011 McGill College. There will be a few exceptions to the schedule/location of office hours and these will be posted on myCourses.
 
-### Graders
-All assignments will be graded by graders. They do not have any contacts with students. 
-
-### Email
+### Email   
 When sending an email please include in the subject heading (EPIB-607 – Inferential
 Statistics). It will be primarily the responsibility of the TAs to respond to emails and every effort will be made to respond as soon as possible. Please be aware responses to emails received after 5 p.m EDT/EST or on weekends may be delayed. For questions related to assignments, remember to email well in advance of the due date. Please be sure to only use your McGill institutional email for communications with the instructor and the TAs. 
 
 
 # Reading materials and lectures 
 Class notes are available through MyCourses. If you do not have a personal computer to access the materials, please get in touch with the instructor. 
+In addition to class notes, I will also upload
+-  Assignments 
+-  Exam and assignment solutions. 
+-  Supplementary reading questions. 
+-  Questions commonly raised by students.
 
-There is no required textbook. However, the lecture will follow the recommended book below: 
+There is no required textbook. However, the lecture will follow the recommended book below:   
 
+## Recommended textbook 
 Introduction to the Practice of Statistics
 Tenth  Edition (2021) 
 By David S. Moore; George P. McCabe; Bruce Craig
 
-In addition to class notes, I will also upload
-
--  Assignments 
--  Exam and assignment solutions. 
--  Supplementary reading questions. 
--  Questions commonly raised by students. 
+1-term of e-book purchase entitles students to 6 months access to our Achieve platform, but they are able to download the e-book for 4 years.
 
 
 ## Required equipment
@@ -81,7 +92,7 @@ In addition to class notes, I will also upload
 
 
 ## Software
-There will be in-class illustrations using R software.    
+There will be in-class illustrations using R Studio software.    
 Many examples contain R codes and public data so that you can replicate the analysis. The codes are avaialble in: https://github.com/hiroshimamiya/EPIB607/tree/main/Codes  
 but also often pasted to lecture slides.   
 
@@ -95,28 +106,31 @@ Mid-term exam | 30% or 0% | TBA |
 Final exam |50% or 80% | TBA|
 Total	| 100%
 
-The midterm will be held in class, (2 hours), same classroom.
-The final will be held, (3 hours), same classroom.
+The midterm will be held in class, (2 hours)
+The final will be held, (3 hours)
 
-The Midterm and final exams are in-person. You are allowed to bring a cheatsheet (1 page double sided, A4 size), but not your laptop, smartphone, nor textbook.  
-
-
+The Midterm and final exams are in-person. You are allowed to bring a cheatsheet (1 page double sided, A4 size) and calculator, but not your laptop, smartphone, nor textbook.  
 
 
 
 
-Assignments (20%): There will be 5 assignments during the term. Assignments must be uploaded to
-myCourses as a pdf before the specified date/time due. Do not upload assignment in Word, or as JPEG or any format other than pdf. Assignments uploaded in any format other than a pdf will not be marked. Note that assignments do not have to be completed R markdown. You can use word application  as long as they are legible and submitted as a pdf document. Late assignments will not be accepted. 
+**Assignments (20%)**: There will be 5 assignments during the term.       
+ - Assignments must be uploaded to myCourses as a pdf before the specified date/time due.         
+- Please do not upload assignment in Word, or as JPEG or any format other than pdf. Assignments uploaded in any format other than a pdf will not be marked.         
+ - Assignments do not have to be completed R markdown. You can use word application as long as they are legible and submitted as a pdf document. Late assignments will not be accepted, unless discussed with the instructor well before the due date (see Accomodation below).         
+ - The purpose of the assignments is to make you ready for mid-term and final exams, provide oppotunities to apply lecture materials to variety of real-world and conceptual problems, and to provide feedback on your learning progress.      
 
-Midterm Exam (25%). There will be a closed book exam, during class time (2 hours) that will take place on  (TBA). Please arrive at class on time ready to start your exam.
 
-Final Exam (%). There will be a closed book 3-hour final exam that will take place during the exam period on. 
-The location to be determined. The final exam will cover material from the whole course and will be graded by the instructor and the TAs. 
+**Midterm Exam (25%)**. There will be a closed book exam, during class time (2 hours) that will take place on  (TBA). Please arrive at class on time ready to start your exam.     
 
-## Accommodations for missed assignments
-If you need to seek accommodation for missing in-course exams and assignments due to medical or non-medical, please discuss the situation with the instructor at least one week before the original assignment due/exam date, with valid and demonstratable reasons. Urgent (within one week) request for accommodation, again with valid and demonstratable reasons, will be handled case-by-case. You are also encouraged to contact the SAA above when requesting any accommodations. 
+**Final Exam (50%)**. There will be a closed book 3-hour final exam that will take place during the exam period on.    
+The location to be determined. The final exam will cover material from the whole course and will be graded by the instructor and the TAs.   
+1-page (A4, lettersize) cheatsheet is allowed. Calculator is needed.     
 
-Deferrals are not permitted for the midterm exam.
+## Accommodations for missed assignments   
+If you need to seek accommodation for missing in-course exams and assignments due to medical or non-medical, please discuss the situation with the instructor at least one week before the original assignment due/exam date, with valid and demonstratable reasons. Urgent (within one week) request for accommodation, again with valid and demonstratable reasons, will be handled case-by-case. You are also encouraged to contact the SAA above when requesting any accommodations.    
+
+Deferrals are not permitted for the midterm exam.   
 
 
 ---
