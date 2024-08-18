@@ -498,21 +498,57 @@ median(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"])
 ```{r}
 png("../EPIB607Notes2012/Part1Figs/incomeTransformation.png", width = 1500, height = 600, units = "px",  res = 150)
 par(mfrow = c(1, 3))
-  sales <- (rbeta(10000,2,5)*200)
-  hist(sales, main = "Annual income in 1000 CAD
+
+  # Income data, 
+  income <- (rbeta(10000,2,5)*200)
+  
+  # histogram 
+  hist(income, main = "Annual income in 1000 CAD
        from 10000 households")
-  hist(log(sales), main = "Annual income in 1000 CADk, LN")
-  hist(sqrt(sales), main = "Annual income in 1000 CAD, sqrt")
+  
+  # Transformation 
+  logIncome <- log(income)
+  sqrtIncome <- sqrt(income)
+  
+  # plot 
+  hist(logIncome, main = "Annual income in 1000 CADk, LN")
+  hist(sqrtIncome, main = "Annual income in 1000 CAD, sqrt")
+  
 dev.off()
 
-          
+  mean(income)
+  median(income)
+  sd(income)        
+  
+  mean(logIncome)
+  sd(logIncome)
+    
+  mean(sqrtIncome)
+  sd(sqrtIncome)      
 
-
-          
-          
-          
 ```
 
+```{r}
+
+png("../EPIB607Notes2012/Part1Figs/heightTransformation.png", width = 1500, height = 600, units = "px",  res = 150)
+par(mfrow = c(1, 3))
+height <- rnorm(n = 10000, mean = 160, sd = 15) 
+hist(height, main = "Heigh (CM) \n mean = 160cm, SD = 15 ")
+
+heightInch <- height * 0.393701
+hist(heightInch, main = "Height (inch) \n mean=??, SD = ??")
+dev.off()
+
+mean(height)
+mean(heightInch)
+
+sd(height)
+sd(heightInch)
+
+
+
+
+```
 
 
 
