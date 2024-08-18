@@ -491,7 +491,26 @@ stem(petSurvey[petSurvey$petOwn == "Yes", "qualityLife"])
 median(petSurvey[petSurvey$petOwn == "Yes", "SRHealth"])
 
 
+```
 
+
+#Transformation 
+```{r}
+png("../EPIB607Notes2012/Part1Figs/incomeTransformation.png", width = 1500, height = 600, units = "px",  res = 150)
+par(mfrow = c(1, 3))
+  sales <- (rbeta(10000,2,5)*200)
+  hist(sales, main = "Annual income in 1000 CAD
+       from 10000 households")
+  hist(log(sales), main = "Annual income in 1000 CADk, LN")
+  hist(sqrt(sales), main = "Annual income in 1000 CAD, sqrt")
+dev.off()
+
+          
+
+
+          
+          
+          
 ```
 
 

@@ -30,3 +30,31 @@ legend("topright", legend=c("My trials", "Your trials"),
 
 
 
+
+
+
+# Now calculate cumulative mean - note thatr Y is not probability 
+
+# sample of people, with height 
+png("../EPIB607Notes2012/Part2Figs/cumulativeHeightSample.png", width = 1200, height = 700, units = "px",  res = 150)
+
+sampleByHiroshi <- rnorm(mean = 165, sd = 5, n = 10000)
+
+# cumulative sum of height, and calculate cumulative mean 
+cumSumHeight=cumsum(sampleByHiroshi)
+cumMeanHeight <- cumSumHeight/seq_along(sampleByHiroshi)
+
+# Plot cumulative sum over the number of toss
+plot(y=cumMeanHeight, 
+     x = 1:length(sampleByHiroshi), 
+     type = "l", 
+     main = "Coin tosses- demontrating randomness and probability \n 
+Proportion of heads over trials at nth flip", 
+     xlab = "Number people to recruit (size of sample)", ylab = "Mean height (X bar), cemtimeter")
+
+# Add horizontal straight line
+abline(h = 0.5, col = "grey")
+
+
+
+dev.off()
