@@ -1,8 +1,9 @@
 
 # plto function borrowed from here 
-https://r-coder.com/normal-distribution-r/
-  
-  
+#https://r-coder.com/normal-distribution-r/
+ 
+#Another plot function - prob easier to use  
+#https://homerhanumat.github.io/tigerstats/qnorm.html 
   
   #Our population, Z distribution 
   x <- seq(from =-10, to =10, by = 0.1)
