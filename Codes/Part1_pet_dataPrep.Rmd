@@ -373,7 +373,7 @@ dev.off()
 
 
 png("../EPIB607Notes2012/Part1Figs/box_horizontal.png", width = 1000, height = 500, units = "px",  res = 150)
-    boxplot(petSurvey$SRHealth, main = "Boxplot - Self-asessed helath", xlab = "Self-asessed health")
+    boxplot(petSurvey$SRHealth, main = "Boxplot - Self-asessed helath", xlab = "Self-asessed health", horizontal = TRUE)
 dev.off()
 
 
