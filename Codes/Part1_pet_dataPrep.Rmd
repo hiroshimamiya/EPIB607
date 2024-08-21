@@ -531,7 +531,7 @@ dev.off()
 ```{r}
 
 png("../EPIB607Notes2012/Part1Figs/heightTransformation.png", width = 1500, height = 600, units = "px",  res = 150)
-par(mfrow = c(1, 3))
+par(mfrow = c(1, 2))
 height <- rnorm(n = 10000, mean = 160, sd = 15) 
 hist(height, main = "Heigh (CM) \n mean = 160cm, SD = 15 ")
 
@@ -539,11 +539,26 @@ heightInch <- height * 0.393701
 hist(heightInch, main = "Height (inch) \n mean=??, SD = ??")
 dev.off()
 
+
+png("../EPIB607Notes2012/Part1Figs/heightTransformationShift.png", width = 1500, height = 600, units = "px",  res = 150)
+par(mfrow = c(1, 3))
+height <- rnorm(n = 10000, mean = 160, sd = 15) 
+hist(height, main = "Heigh (CM) \n mean = 160cm, SD = 15 ")
+
+heightInchShift <- height * 0.393701 + 10
+
+hist(heightInch, main = "Height (inch) \n mean=??, SD = ??")
+hist(heightInchShift, main = "Height (inch) + 10inch \n mean=??, SD = ??")
+dev.off()
+
 mean(height)
 mean(heightInch)
+mean(heightInchShift)
+
 
 sd(height)
 sd(heightInch)
+sd(heightInchShift)
 
 
 
