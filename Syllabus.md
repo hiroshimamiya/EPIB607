@@ -131,7 +131,7 @@ The Midterm and final exams are in-person. You are allowed to bring a cheatsheet
 - Please do not upload assignment in the Microsoft Word Format, or as JPEG or any format other than PDF. Assignments uploaded in any format other than a pdf will not be marked.         
  - Assignments do not have to be completed in R markdown format. You can use word application as long as they are legible and converted into a pdf document. Late assignments will not be accepted, unless discussed with the instructor well before the due date (see Accomodation below).         
  - The purpose of the assignments is to make you ready for mid-term and final exams, provide oppotunities to apply lecture materials to a variety of real-world and conceptual problems, to provide feedback on your learning progress, and to identify weakness to be addressed.   
- - While generative AI applications can solve some assignment problems (you need to cite the application in your assignment), the reliance on such application will lead to the challenge in solving exam questions (and thus failur), since access to these applications are not allowed during the exam. 
+ - While generative AI applications can solve some (but not majority of questions) assignment problems (you need to cite the application in your assignment), the reliance on such application will lead to the challenge in solving exam questions (and thus failur), since access to these applications are not allowed during the exam. 
 
 
 **Midterm Exam (25%)**. There will be a closed book exam, during class time (2 hours) that will take place in room (TBA). Please arrive at class on time ready to start your exam.     
@@ -139,10 +139,10 @@ The Midterm and final exams are in-person. You are allowed to bring a cheatsheet
 **Final Exam (50%)**. There will be a closed book 3-hour final exam that will take place during the exam period on room (TBA). The final exam will cover material from the whole course and will be graded by the instructor and the TAs.   
 1-page (A4, lettersize) cheatsheet is allowed, on both sides. A calculator is needed.      
 
-**Preperation for exams**
+**Preperation for exams**   
 All questions will come from materials and examples and key concepts covered in class and assignments. Therefore, it is critical to work on assignment questions and lecture materials until you have solid grasp.     
 There will be a review session before each exam.   
-
+Obtaining sufficient grades to pass the exams requres quantiative reasoning skills that you develop by actively solving assignmnet questions and going throrgh the lecture material. 
 
 ## Accommodations for missed assignments   
 If you need to seek accommodation for missing in-course exams and assignments due to medical or non-medical, please discuss the situation with the instructor at least one week before the original assignment due/exam date, with valid and demonstratable reasons. Urgent (within one week) request for accommodation, again with valid and demonstratable reasons, will be handled case-by-case. You are also encouraged to contact the SAA above when requesting any accommodations.    
