@@ -113,9 +113,11 @@ However, this course focuses on the concept and application of Biostatistics, an
 Assignment | Grade | Date
 -----------|-------|------------------------
 Five or six Assignment  |20%| Every few weeks
-Mid-term exam | 30% or 0% | TBA | October 24, 2024
-Final exam |50% or 80% | TBA| December 10, 2024
+Mid-term exam* | 30% or 0% | TBA (likely October 24, 2024)
+Final exam |50% or 80% | TBA (liekly December 10, 2024)
 Total	| 100% 
+
+*Midterm may not be part of the final grade, if the final exam gives higher score. Conversely, if the final exam is low in score such that mid-term can push the final grade up, I will add the score from the mid-term into the final grade. 
 
 The midterm will be held in class (2 hours). 
 The final will be held in class (3 hours). 
@@ -136,6 +138,11 @@ The Midterm and final exams are in-person. You are allowed to bring a cheatsheet
 
 **Final Exam (50%)**. There will be a closed book 3-hour final exam that will take place during the exam period on room (TBA). The final exam will cover material from the whole course and will be graded by the instructor and the TAs.   
 1-page (A4, lettersize) cheatsheet is allowed, on both sides. A calculator is needed.      
+
+**Preperation for exams**
+All questions will come from materials and examples and key concepts covered in class and assignments. Therefore, it is critical to work on assignment questions and lecture materials until you have solid grasp.     
+There will be a review session before each exam.   
+
 
 ## Accommodations for missed assignments   
 If you need to seek accommodation for missing in-course exams and assignments due to medical or non-medical, please discuss the situation with the instructor at least one week before the original assignment due/exam date, with valid and demonstratable reasons. Urgent (within one week) request for accommodation, again with valid and demonstratable reasons, will be handled case-by-case. You are also encouraged to contact the SAA above when requesting any accommodations.    
