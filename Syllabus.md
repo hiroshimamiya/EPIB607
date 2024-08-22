@@ -1,6 +1,8 @@
 # EPIB 607: Inferential Statistics (4-Credit)
-2024 Fall   
-Department of Epidemiology, Biostatistics, and Occupational Health
+**TERM: 2024 Fall**  
+**Department of Epidemiology, Biostatistics, and Occupational Health**  
+**School of Population and Global Health, McGill University**  
+
 
 
 # Preamble   
@@ -15,12 +17,9 @@ One out of three students in Canada experience some form of mental health issues
 McGill University is located on the unceded territory of the Kanien’keha:ka, which has long served as a site of meeting and exchange amongst Indigenous peoples,  including the Haudenosaunee and Anishinabeg nations. McGill honors, recognizes, and respects these nations as the traditional stewards of the lands and waters on which we meet today
 
 
-# Instructor information   
-Hiroshi Mamiya. PhD   
-Department of Epidemiology, Biostatistics, and Occupational Health   
-School of Population and Global Health      
-Faculty of Medicine     
-McGill Univeristy    
+# Instructor and TA information   
+**Hiroshi Mamiya PhD**  
+Names of TA and graders will be availalbe in course slides (first day) and in MyCourses. 
 
 
 # Course information 
@@ -28,9 +27,12 @@ McGill Univeristy
 
 ## Prerequisites
 Being in the first year of an M.Sc or Ph.D. in the Epidemiology, Public Health, or Occupational Health program, or having permission from the instructor if you are from other departments and like to learn applied biostatistics.   
-EPIB 507 and EPIB 521 are the primary alternative to this course.    
+**EPIB 507 and EPIB 521 are the primary alternative to this course, for studnets outside the EBOH Department.**    
 
 While not required, basic skills in statistical programming (preferably R statistical software) are critical, as the course uses a large number of analysis and visualization examples using R statistical software. Students are suggested to take the companion course EPIB613, Intro to Statistical Software.    
+
+Also, ability to use a hand calculator, and basic understanding in arithmetic operations are needed. 
+
 
 
 
@@ -45,49 +47,55 @@ The aim of this course is to provide students with basic principles of statistic
 
 
 ## Course time and location
-8:35AM - 10:25AM
+8:35AM - 10:25AM, Tuesdays and Thursdays. 
 Education Building 129
 Aug 29, 2024 - Dec 04, 2024
 
+Exam dates and location are available in course slides and MyCourses.    
+**Lectures will be recorded** and will be provided to those who unable to attend the class due to circumstances beyond thier control (e.g., urgent travel, medically related absence, etc).    
+**Classes will be in-person, unless weather and buildingin conditions make in-person teaching challlenging e.g., ice or snowstorm. In such case, Zoom address will be provided for virtual class**
 
 
 # Office hours and communication    
 ### Instructor 
-By appointment, in-person or zoom   
+By appointment, in-person or zoom. Please e-mail to book the time, or talke to me after the class.     
 
 ### TA office hours   
 The Teaching Assistants (TAs) are your first point of contact for questions about the course
-material. Office hours will be offered weekly in person by the TAs (Dates and time TBA). All office hours will take place in 2011 McGill College. 
-
-Office hours will be offered weekly in person by the TAs on  ZZZ p.m. to ZZZ p.m. and
- ZZZ p.m. to ZZZ p.m. dates and time will be posted on myCourses. All office hours will take place in 2011 McGill College. There will be a few exceptions to the schedule/location of office hours and these will be posted on myCourses.
+materials. Weekly office hours will be offered weekly in-person by the TAs (Dates and time will be available in MyCourses and Course Slides). There will be a few exceptions to the schedule/location of office hours, and these will be posted on myCourses and course slides.
 
 ### Email   
-When sending an email please include in the subject heading (EPIB-607 – Inferential
-Statistics). It will be primarily the responsibility of the TAs to respond to emails and every effort will be made to respond as soon as possible. Please be aware responses to emails received after 5 p.m EDT/EST or on weekends may be delayed. For questions related to assignments, remember to email well in advance of the due date. Please be sure to only use your McGill institutional email for communications with the instructor and the TAs. 
+When sending an email about booking time, clarification of assignments, and questions about the course materials, please include in the subject heading (EPIB-607 – Inferential Statistics). It will be primarily the responsibility of the TAs to respond to emails and every effort will be made to respond as soon as possible. Please be aware responses to emails received on weekends may be delayed. For questions related to assignments and exams, remember to email well in advance of the due dates. Please be sure to only use your McGill institutional email for communications with the instructor and the TAs - we may not be able to respond to non-Mcgill email address.  
 
 
 # Reading materials and lectures 
-Class notes are available through MyCourses. If you do not have a personal computer to access the materials, please get in touch with the instructor. 
+Class notes are available through MyCourses. If you do not have a personal computer to access the electronic materials (mainly myCourses), please get in touch with the instructor. 
 In addition to class notes, I will also upload
 -  Assignments 
 -  Exam and assignment solutions. 
 -  Supplementary reading questions. 
 -  Questions commonly raised by students.
 
-There is no required textbook. However, the lecture will follow the recommended book below:   
 
 ## Recommended textbook 
-Introduction to the Practice of Statistics
-Tenth  Edition (2021) 
-By David S. Moore; George P. McCabe; Bruce Craig
+*Introduction to the Practice of Statistics Tenth  Edition* (2021) 
+By David S. Moore; George P. McCabe; Bruce Craig   
+https://store.macmillanlearning.com/ca/product/Introduction-to-the-Practice-of-Statistics/p/1319244440
 
 1-term of e-book purchase entitles students to 6 months access to our Achieve platform, but they are able to download the e-book for 4 years.
 
+**Optional e-book (free)**
+*OpenIntroStatistics Fourth Edition* (2019) 
+By David Diez, Mine C¸ etinkaya-Rundel, Christopher D Barr     
+https://www.openintro.org/book/os/    
+and the pdf version is here    
+https://www.openintro.org/go/?id=os4_for_screen_readers&referrer=/book/os/index.php     
+
+
 
 ## Required equipment
-  - A calculator with square root, log and exponential functions. 
-  - A computer to access myCourses. 
+  - A calculator with square root, log and exponential functions, to be used during the exams. 
+  - A computer or table to access materials in myCourses. 
 
 
 
@@ -96,36 +104,38 @@ There will be in-class illustrations using R Studio software.
 Many examples contain R codes and public data so that you can replicate the analysis. The codes are avaialble in: https://github.com/hiroshimamiya/EPIB607/tree/main/Codes  
 but also often pasted to lecture slides.   
 
+However, this course focuses on the concept and application of Biostatistics, and the programming part is covered by EPIB 613.   
+
+
 
 
 # Grading Scheme
 Assignment | Grade | Date
 -----------|-------|------------------------
-Assignment 1-5 |20%| 
-Mid-term exam | 30% or 0% | TBA |
-Final exam |50% or 80% | TBA|
-Total	| 100%
+Five or six Assignment  |20%| Every few weeks
+Mid-term exam | 30% or 0% | TBA | October 24, 2024
+Final exam |50% or 80% | TBA| December 10, 2024
+Total	| 100% 
 
-The midterm will be held in class, (2 hours)
-The final will be held, (3 hours)
+The midterm will be held in class (2 hours). 
+The final will be held in class (3 hours). 
 
-The Midterm and final exams are in-person. You are allowed to bring a cheatsheet (1 page double sided, A4 size) and calculator, but not your laptop, smartphone, nor textbook.  
-
+The Midterm and final exams are in-person. You are allowed to bring a cheatsheet (1 page double sided, A4 size) and calculator. You are not allowed to bring your laptop, smartphone, nor textbook.   
 
 
 
 **Assignments (20%)**: There will be 5 assignments during the term.       
- - Assignments must be uploaded to myCourses as a pdf before the specified date/time due.         
-- Please do not upload assignment in Word, or as JPEG or any format other than pdf. Assignments uploaded in any format other than a pdf will not be marked.         
- - Assignments do not have to be completed R markdown. You can use word application as long as they are legible and submitted as a pdf document. Late assignments will not be accepted, unless discussed with the instructor well before the due date (see Accomodation below).         
- - The purpose of the assignments is to make you ready for mid-term and final exams, provide oppotunities to apply lecture materials to variety of real-world and conceptual problems, and to provide feedback on your learning progress.      
+ - Assignments must be uploaded to myCourses as a **pdf** before the specified date/time due.         
+- Please do not upload assignment in the Microsoft Word Format, or as JPEG or any format other than PDF. Assignments uploaded in any format other than a pdf will not be marked.         
+ - Assignments do not have to be completed in R markdown format. You can use word application as long as they are legible and converted into a pdf document. Late assignments will not be accepted, unless discussed with the instructor well before the due date (see Accomodation below).         
+ - The purpose of the assignments is to make you ready for mid-term and final exams, provide oppotunities to apply lecture materials to a variety of real-world and conceptual problems, to provide feedback on your learning progress, and to identify weakness to be addressed.   
+ - While generative AI applications can solve some assignment problems (you need to cite the application in your assignment), the reliance on such application will lead to the challenge in solving exam questions (and thus failur), since access to these applications are not allowed during the exam. 
 
 
-**Midterm Exam (25%)**. There will be a closed book exam, during class time (2 hours) that will take place on  (TBA). Please arrive at class on time ready to start your exam.     
+**Midterm Exam (25%)**. There will be a closed book exam, during class time (2 hours) that will take place in room (TBA). Please arrive at class on time ready to start your exam.     
 
-**Final Exam (50%)**. There will be a closed book 3-hour final exam that will take place during the exam period on.    
-The location to be determined. The final exam will cover material from the whole course and will be graded by the instructor and the TAs.   
-1-page (A4, lettersize) cheatsheet is allowed. Calculator is needed.     
+**Final Exam (50%)**. There will be a closed book 3-hour final exam that will take place during the exam period on room (TBA). The final exam will cover material from the whole course and will be graded by the instructor and the TAs.   
+1-page (A4, lettersize) cheatsheet is allowed, on both sides. A calculator is needed.      
 
 ## Accommodations for missed assignments   
 If you need to seek accommodation for missing in-course exams and assignments due to medical or non-medical, please discuss the situation with the instructor at least one week before the original assignment due/exam date, with valid and demonstratable reasons. Urgent (within one week) request for accommodation, again with valid and demonstratable reasons, will be handled case-by-case. You are also encouraged to contact the SAA above when requesting any accommodations.    
@@ -134,21 +144,22 @@ Deferrals are not permitted for the midterm exam.
 
 
 ---
-## Materials to cover
+## Course contents 
+**Corresponding book chapters will be provided in lecture slides**   
 
-Part 1. Introduction	
+**Part 1. Introduction** 	  
   - Course description, evaluation
   - Introduction to statistical analysis in population health science
     
 
-Part 2. Descriptive statistics	
+**Part 2. Descriptive statistics**   	
   - Types of data
   - Visual summaries: histograms, stem & leaf plots, boxplots  
   - Numerical summaries: means, medians, variance  
   - Rescaling  
  
 
-Part 3. Probability and probability distributions	
+**Part 3. Probability and probability distributions**   	
  - Laws of probability
  - Conditional probability
  - Random variables (discrete & continuous)
@@ -160,7 +171,7 @@ Part 3. Probability and probability distributions
  - Normal approximation to the Binomial
  - Poisson distribution
 
-Par 4. Inference for means	
+**Par 4. Inference for means**   	
  - Sampling
  - Confidence intervals & hypothesis testing for a single mean, variance known
  - Hypothesis testing for a single mean, variance known
@@ -173,7 +184,7 @@ Par 4. Inference for means
  - Confidence intervals & hypothesis testing for two samples (paired and unpaired data 
       equal variance, unpaired data unequal variance) 
 
-Part 5. Inference for proportions and counts      
+**Part 5. Inference for proportions and counts**      
   - Hypothesis testing for proportions  
   - Sample size & power calculations  
   - Chi2 test to compare proportions  
@@ -183,7 +194,7 @@ Part 5. Inference for proportions and counts
   - McNemar’s test   
   - Inference for count data       
 
-Part 6. Regression and correlation    
+**Part 6. Regression and correlation**  
   - Scatter plots, descriptive statistics for two variables  
   - Linear regression  
   - Least squares method  
@@ -196,7 +207,7 @@ Part 6. Regression and correlation
   - Kendall’s tau      
 
   
-Part 7 Nonparametric statistics(optional, if time permits)  
+**Part 7 Nonparametric statistics(optional, if time permits)**
   - CI for median    
   - Wilcoxon signed rank test   
   - Friedman test  
