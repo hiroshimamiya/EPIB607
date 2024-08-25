@@ -139,7 +139,7 @@ The Midterm and final exams are in-person. You are allowed to bring a cheatsheet
  - While generative AI applications can solve some (but not the majority of) assignment problems, the reliance on such application will lead to the challenge in solving exam questions, since access to these applications are not allowed during the exam. 
 
 
-**Midterm Exam (25%)**. There will be a closed book exam during class time (2 hours) that will take place in room (TBA).   
+**Midterm Exam (30%)**. There will be a closed book exam during class time (2 hours) that will take place in room (TBA).   
 Please arrive at class on time to start your exam.     
 A 1-page (A4, lettersize) cheatsheet is allowed, on both sides. A calculator is needed. The use of computer and smartphone is not allowed.   
 
