@@ -19,7 +19,7 @@ McGill University is located on the unceded territory of the Kanien’keha:ka, w
 
 # Instructor and TA information   
 **Hiroshi Mamiya PhD**  
-Names of TA and graders will be availalbe in course slides (first day) and in MyCourses. 
+Names of TA and graders will be available in course slides (first day) and in MyCourses. 
 
 
 # Course information 
@@ -27,7 +27,7 @@ Names of TA and graders will be availalbe in course slides (first day) and in My
 
 ## Prerequisites
 Being in the first year of an M.Sc or Ph.D. in the Epidemiology, Public Health, or Occupational Health program, or having permission from the instructor if you are from other departments and like to learn applied biostatistics.   
-**EPIB 507 and EPIB 521 are the primary alternative to this course, for studnets outside the EBOH Department.**    
+**EPIB 507 and EPIB 521 are the primary alternative to this course, for students outside the EBOH Department.**    
 
 While not required, basic skills in statistical programming (preferably R statistical software) are critical, as the course uses a large number of analysis and visualization examples using R statistical software. Students are suggested to take the companion course EPIB613, Intro to Statistical Software.    
 
@@ -52,13 +52,13 @@ Education Building 129
 Aug 29, 2024 - Dec 04, 2024
 
 Exam dates and location are available in course slides and MyCourses.    
-**Lectures will be recorded** and will be provided to those who unable to attend the class due to circumstances beyond thier control (e.g., urgent travel, medically related absence, etc).    
-**Classes will be in-person, unless weather and buildingin conditions make in-person teaching challlenging e.g., ice or snowstorm. In such case, Zoom address will be provided for virtual class**
+**Lectures will be recorded** and will be provided to those who unable to attend the class due to circumstances beyond their control (e.g., urgent travel, medically related absence, etc).    
+**Classes will be in-person, unless weather and building conditions make in-person teaching challenging e.g., ice or snowstorm. In such case, Zoom address will be provided for virtual class before the class**
 
 
 # Office hours and communication    
 ### Instructor 
-By appointment, in-person or zoom. Please e-mail to book the time, or talke to me after the class.     
+By appointment, in-person or zoom. Please e-mail to book the time, or talk to me after the class.     
 
 ### TA office hours   
 The Teaching Assistants (TAs) are your first point of contact for questions about the course
@@ -84,6 +84,8 @@ https://store.macmillanlearning.com/ca/product/Introduction-to-the-Practice-of-S
 
 1-term of e-book purchase entitles students to 6 months access to our Achieve platform, but they are able to download the e-book for 4 years.
 
+I will draw several example from this book during the class, but you do not need the book to obtain the answers. 
+
 **Optional e-book (free)**
 *OpenIntroStatistics Fourth Edition* (2019) 
 By David Diez, Mine C¸ etinkaya-Rundel, Christopher D Barr     
@@ -101,7 +103,7 @@ https://www.openintro.org/go/?id=os4_for_screen_readers&referrer=/book/os/index.
 
 ## Software
 There will be in-class illustrations using R Studio software.    
-Many examples contain R codes and public data so that you can replicate the analysis. The codes are avaialble in: https://github.com/hiroshimamiya/EPIB607/tree/main/Codes  
+Many examples contain R codes and public data so that you can replicate the analysis. The codes are available in: https://github.com/hiroshimamiya/EPIB607/tree/main/Codes  
 but also often pasted to lecture slides.   
 
 However, this course focuses on the concept and application of Biostatistics, and the programming part is covered by EPIB 613.   
@@ -112,12 +114,12 @@ However, this course focuses on the concept and application of Biostatistics, an
 # Grading Scheme
 Assignment | Grade | Date
 -----------|-------|------------------------
-Five or six Assignment  |20%| Every few weeks
+Five or six Assignment  |20%| Every few weeks (dates to be announced soon)
 Mid-term exam* | 30% or 0% | TBA (likely October 24, 2024)
-Final exam |50% or 80% | TBA (liekly December 10, 2024)
+Final exam |50% or 80% | TBA (likely December 10, 2024)
 Total	| 100% 
 
-*Midterm may not be part of the final grade, if the final exam gives higher score. Conversely, if the final exam is low in score such that mid-term can push the final grade up, I will add the score from the mid-term into the final grade. 
+*Midterm may not be part of the final grade, if the final exam gives higher score i.e., your exam scores will be re-weighted to maximize the final grades. If the final exam is low in score such that mid-term can push the final grade up, I will add the score from the mid-term into the final grade, meaning that the weight of the final will be 50%, and that of the midterm will be 30% of the final mark. 
 
 The midterm will be held in class (2 hours). 
 The final will be held in class (3 hours). 
@@ -126,23 +128,27 @@ The Midterm and final exams are in-person. You are allowed to bring a cheatsheet
 
 
 
-**Assignments (20%)**: There will be 5 assignments during the term.       
+**Assignments (20%)**: There will be 5 or 6 assignments during the term.       
  - Assignments must be uploaded to myCourses as a **pdf** before the specified date/time due.         
-- Please do not upload assignment in the Microsoft Word Format, or as JPEG or any format other than PDF. Assignments uploaded in any format other than a pdf will not be marked.         
- - Assignments do not have to be completed in R markdown format. You can use word application as long as they are legible and converted into a pdf document. Late assignments will not be accepted, unless discussed with the instructor well before the due date (see Accomodation below).         
- - The purpose of the assignments is to make you ready for mid-term and final exams, provide oppotunities to apply lecture materials to a variety of real-world and conceptual problems, to provide feedback on your learning progress, and to identify weakness to be addressed.   
- - While generative AI applications can solve some (but not majority of questions) assignment problems (you need to cite the application in your assignment), the reliance on such application will lead to the challenge in solving exam questions (and thus failur), since access to these applications are not allowed during the exam. 
+- Please do not upload assignment in the Microsoft Word Format, or as JPEG or any format other than PDF. Assignments uploaded in any format other than a pdf will not be marked.          
+ - Assignments do not have to be completed in the R markdown format. You can use word application as long as they are legible and converted into a pdf document. Late assignments will not be accepted, unless discussed with the instructor well before the due date (see Accommodation below).         
+ - The purpose of the assignments is to make you ready for mid-term and final exams, provide opportunities to apply lecture materials to a variety of real-world and conceptual problems, to provide feedback on your learning progress, and to identify weakness to be addressed.   
+ - While generative AI applications can solve some (but not majority) assignment problems, the reliance on such application will lead to the challenge in solving exam questions, since access to these applications are not allowed during the exam. 
 
 
-**Midterm Exam (25%)**. There will be a closed book exam, during class time (2 hours) that will take place in room (TBA). Please arrive at class on time ready to start your exam.     
+**Midterm Exam (25%)**. There will be a closed book exam during class time (2 hours) that will take place in room (TBA).   
+Please arrive at class on time to start your exam.     
+A 1-page (A4, lettersize) cheatsheet is allowed, on both sides. A calculator is needed. The use of computer and smartphone is not allowed.   
 
-**Final Exam (50%)**. There will be a closed book 3-hour final exam that will take place during the exam period on room (TBA). The final exam will cover material from the whole course and will be graded by the instructor and the TAs.   
-1-page (A4, lettersize) cheatsheet is allowed, on both sides. A calculator is needed.      
+**Final Exam (50%)**. There will be a closed book 3-hour final exam that will take place during the exam period on room (TBA). The final exam will cover material from the whole course (including contents before the mid-term).    
+A 1-page (A4, lettersize) cheatsheet is allowed, on both sides. A calculator is needed. The use of computer and smartphone is not allowed. 
 
-**Preperation for exams**   
-All questions will come from materials and examples and key concepts covered in class and assignments. Therefore, it is critical to work on assignment questions and lecture materials until you have solid grasp.     
-There will be a review session before each exam.   
-Obtaining sufficient grades to pass the exams requres quantiative reasoning skills that you develop by actively solving assignmnet questions and going throrgh the lecture material. 
+**Preparation for exams**   
+ - All questions will come from examples and key concepts covered in class and assignments. Therefore, it is critical to  - work on assignment questions and lecture materials until you have solid grasp.     
+ - There will be a review session before each exam.   
+ - Obtaining sufficient grades to pass the exams requires quantitative problem solving skills that you develop by actively solving assignment questions and going through the lecture material. 
+ - As staed above, AI tools such as ChatGPT and their plugin for statistics provide useful guidance to answer assignment questions, but during exam, you will have no access to such tools. 
+
 
 ## Accommodations for missed assignments   
 If you need to seek accommodation for missing in-course exams and assignments due to medical or non-medical, please discuss the situation with the instructor at least one week before the original assignment due/exam date, with valid and demonstratable reasons. Urgent (within one week) request for accommodation, again with valid and demonstratable reasons, will be handled case-by-case. You are also encouraged to contact the SAA above when requesting any accommodations.    
@@ -228,19 +234,17 @@ Deferrals are not permitted for the midterm exam.
 ---- 
 
 # Policy around the use of AI technologies for class assignments
-Generative AI is a type of artificial intelligence that uses machine learning to create new types of media, including text, images, software codes, sound, and video in response to user prompts (inputs). Many tools exist that use generative AI to create new content. 
-Some examples include ChatGPT and Bing.   
+Generative AI is a type of artificial intelligence that uses machine learning to create new types of media, including text, images, software codes, sound, and video in response to user prompts (inputs). Many tools exist that use generative AI to create new content and guide answering very simple scientific questions. Some examples include ChatGPT and Bing.    
 
-Use of these tools to complete assignments and presentations is permitted as part of learning aids, as long as the three conditions are met:    
+Use of these tools to complete assignments and presentations is not prohibited, as long as the three conditions are met:    
 
-   1.   Acknowledge the use of these tools. Specifically, you must cite the creator and the tool in your reference section at the end of your assignment and presentations. Instruction for citation, which you may need to familiarize yourself with future course work, publication, and report writing is provided at https://style.mla.org/citing-generative-ai/    
+   1.   Acknowledge the use of these tools. Specifically, you must cite the creator and the tool in your reference section at the end of your assignment files. Instruction for citation, which you may need to familiarize yourself with future course work, publication, and report writing is provided at https://style.mla.org/citing-generative-ai/    
 
-   2.   Revise and check outputs from these tools carefully. In other words, you cannot copy and paste the crude (unedited) outputs from these tools into your assignments or presentation slides, as the raw responses from these tools tend to be flawed.    
+   2.   Revise and check outputs from these tools carefully. In other words, you cannot copy and paste the crude (unedited) outputs from these tools into your assignments or presentation slides, as the raw responses from these tools tend to be flawed incorrect and thus you will lose mark.    
 
-   3.   Submit and present any content produced by an artificial intelligence tool and the prompt (or chain of prompts) used to generate the content as an appendix with their assignments. In your presentation, you must also discuss how the tool was (or will be) used to assist in writing and/or slide making, such that other students can be informed with the effective use of these tools.      
+   3.   Submit the prompt (or chain of prompts) used to query guide answering questions at the end of the assignment files.
 
-
-Note: While the use of generative AI tools is permitted in this class, many classes and scientific journals do not allow the use of these tools to generate writing (and any audio and visual contents as well as citations), as their raw outputs are often unreliable and may propagate/amplify misinformation, stigma, and stereotypes. Fact checking is critical when using these tools.   
+Note: While the use of generative AI tools is permitted in this class, many classes and scientific journals do not allow the use of these tools to generate writing (and any audio and visual contents as well as citations), as their raw outputs are often unreliable and may propagate/amplify misinformation, stigma, and stereotypes. Fact checking is critical when using these tools. And again, reliance on the AI tools to answer assignment question will increase the risk of failure in the exams, unless you use the tool in such a way to enhance conceptual understanding in course contents and assignment questions.  
 
 
 # University regulations and support 
