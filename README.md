@@ -67,6 +67,9 @@ materials. Weekly office hours will be offered weekly in-person by the TAs (Date
 ### Email   
 When sending an email about booking time, clarification of assignments, and questions about the course materials, please include in the subject heading (EPIB-607 – Inferential Statistics). It will be primarily the responsibility of the TAs to respond to emails and every effort will be made to respond as soon as possible. Please be aware responses to emails received on weekends may be delayed. For questions related to assignments and exams, remember to email well in advance of the due dates. Please be sure to only use your McGill institutional email for communications with the instructor and the TAs - we may not be able to respond to non-Mcgill email address.  
 
+### Tips when consulting by email or during office hours 
+ - If you need help with some assignment material, go as far as you can before coming. Neither the instructor nor the TAs will tell you how to do a problem without seeing that you have given it  your best shot.  
+ - Manage your time and try to avoid last minute questions (i.e. the day the assignment is due…).   
 
 # Reading materials and lectures 
 Class notes are available through MyCourses. If you do not have a personal computer to access the electronic materials (mainly myCourses), please get in touch with the instructor. 
@@ -86,7 +89,7 @@ https://store.macmillanlearning.com/ca/product/Introduction-to-the-Practice-of-S
 
 I will draw several example from this book during the class, but you do not need the book to obtain the answers. 
 
-**Optional e-book (free)**
+**Another recommended book (free, online)**    
 *OpenIntroStatistics Fourth Edition* (2019) 
 By David Diez, Mine C¸ etinkaya-Rundel, Christopher D Barr     
 https://www.openintro.org/book/os/    
@@ -133,7 +136,7 @@ The Midterm and final exams are in-person. You are allowed to bring a cheatsheet
 - Please do not upload assignment in the Microsoft Word Format, or as JPEG or any format other than PDF. Assignments uploaded in any format other than a pdf will not be marked.          
  - Assignments do not have to be completed in the R markdown format. You can use word application as long as they are legible and converted into a pdf document. Late assignments will not be accepted, unless discussed with the instructor well before the due date (see Accommodation below).         
  - The purpose of the assignments is to make you ready for mid-term and final exams, provide opportunities to apply lecture materials to a variety of real-world and conceptual problems, to provide feedback on your learning progress, and to identify weakness to be addressed.   
- - While generative AI applications can solve some (but not majority) assignment problems, the reliance on such application will lead to the challenge in solving exam questions, since access to these applications are not allowed during the exam. 
+ - While generative AI applications can solve some (but not the majority of) assignment problems, the reliance on such application will lead to the challenge in solving exam questions, since access to these applications are not allowed during the exam. 
 
 
 **Midterm Exam (25%)**. There will be a closed book exam during class time (2 hours) that will take place in room (TBA).   
