@@ -52,8 +52,9 @@ Education Building 129
 Aug 29, 2024 - Dec 04, 2024
 
 Exam dates and location are available in course slides and MyCourses.    
-**Lectures will be recorded** and will be provided to those who unable to attend the class due to circumstances beyond their control (e.g., urgent travel, medically related absence, etc).    
-**Classes will be in-person, unless weather and building conditions make in-person teaching challenging e.g., ice or snowstorm. In such case, Zoom address will be provided for virtual class before the class**
+**Lectures will be recorded** and will be provided to those who are unable to attend the class due to circumstances beyond their control (e.g., urgent travel, medically related absence, etc).      
+   
+**Classes will be in-person, unless weather and building conditions make in-person teaching challenging e.g., ice or snowstorm. In such case, Zoom address will be provided for virtual before the class**
 
 
 # Office hours and communication    
