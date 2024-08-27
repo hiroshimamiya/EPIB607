@@ -151,7 +151,7 @@ A 1-page (A4, lettersize) cheatsheet is allowed, on both sides. A calculator is 
  - All questions will come from examples and key concepts covered in class and assignments. Therefore, it is critical to  - work on assignment questions and lecture materials until you have solid grasp.     
  - There will be a review session before each exam.   
  - Obtaining sufficient grades to pass the exams requires quantitative problem solving skills that you develop by actively solving assignment questions and going through the lecture material. 
- - As staed above, AI tools such as ChatGPT and their plugin for statistics provide useful guidance to answer assignment questions, but during exam, you will have no access to such tools. 
+ - As stated above, AI tools such as ChatGPT and their plugin for statistics may provide guidance to answer some (but not the majority of) assignment questions. However during exam, you will have no access to such tools. Thus reliance on these tools can lead to failure in exams. 
 
 
 ## Accommodations for missed assignments   
