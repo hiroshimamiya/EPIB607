@@ -164,19 +164,19 @@ Deferrals are not permitted for the midterm exam.
 ## Course contents 
 **Corresponding book chapters will be provided in lecture slides**   
 
-**Part 1. Introduction** 	  
+**Part 0. Introduction** 	  
   - Course description, evaluation
   - Introduction to statistical analysis in population health science
     
 
-**Part 2. Descriptive statistics**   	
+**Part 1. Descriptive statistics**   	
   - Types of data
   - Visual summaries: histograms, stem & leaf plots, boxplots  
   - Numerical summaries: means, medians, variance  
   - Rescaling  
  
 
-**Part 3. Probability and probability distributions**   	
+**Part 2. Probability and probability distributions**   	
  - Laws of probability
  - Conditional probability
  - Random variables (discrete & continuous)
@@ -188,7 +188,7 @@ Deferrals are not permitted for the midterm exam.
  - Normal approximation to the Binomial
  - Poisson distribution
 
-**Par 4. Inference for means**   	
+**Par 3. Inference for means**   	
  - Sampling
  - Confidence intervals & hypothesis testing for a single mean, variance known
  - Hypothesis testing for a single mean, variance known
@@ -201,7 +201,7 @@ Deferrals are not permitted for the midterm exam.
  - Confidence intervals & hypothesis testing for two samples (paired and unpaired data 
       equal variance, unpaired data unequal variance) 
 
-**Part 5. Inference for proportions and counts**      
+**Part 4. Inference for proportions and counts**      
   - Hypothesis testing for proportions  
   - Sample size & power calculations  
   - Chi2 test to compare proportions  
@@ -211,7 +211,7 @@ Deferrals are not permitted for the midterm exam.
   - McNemar’s test   
   - Inference for count data       
 
-**Part 6. Regression and correlation**  
+**Part 5. Regression and correlation**  
   - Scatter plots, descriptive statistics for two variables  
   - Linear regression  
   - Least squares method  
