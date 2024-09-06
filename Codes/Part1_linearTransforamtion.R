@@ -1,15 +1,15 @@
 # Exampple linear transformation, Part 1 (descriptive) - 2. 
 
-# Hypothetical height distribution 
+# Hypothetical height distribution, in centimeter. Mean is 160 cm and sd (standard deviation ) is 15. A sample of 1000 people from a hypothetical population of a few million
 # these are artificial (simulated) data, and you will know how to use this function in R in "Probability" module of EPIB613
 x <- rnorm(n = 1000, mean = 160, sd = 15)
 
 
-# Histogram of x variable 
+# Histogram of x variable
 hist(x, main = "Height, mean = 160, sd = 15")
 
 
-# New variable called by, transformed, frmo centimeter to inch 
+# New variable called by, transformed, from centimeter to inch 
 x_inch <- x*0.39
 hist(x_inch, main = "Heigh in inch, mean =? and sd= ?, \n compare x-axis the original x")
 
