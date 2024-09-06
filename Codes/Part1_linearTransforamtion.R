@@ -23,7 +23,7 @@ sd(x_inch) # was it multiplied by 0.39 ?
 
 
 
-# It turned out that the ruler to measure the hight was not accurate but was designed to report 1 inch lower than it shoud be, so we need to add 1 inch to everyone's height now 
+# It turned out that the ruler to measure the hight was not accurate but was designed to report 1 inch lower than it shoud, so we need to add 1 inch to everyone's height now 
 x_inch_correct <- x_inch + 1
 
 # Dispalying the histogram
