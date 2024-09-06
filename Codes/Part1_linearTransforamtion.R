@@ -9,7 +9,7 @@ x <- rnorm(n = 1000, mean = 160, sd = 15)
 hist(x, main = "Height, mean = 160, sd = 15")
 
 
-# New variable called by, transformed, from centimeter to inch 
+# New variable called x_inch, transformed from centimeter to inch 
 x_inch <- x*0.39
 hist(x_inch, main = "Heigh in inch, mean =? and sd= ?, \n compare x-axis the original x")
 
