@@ -1,5 +1,5 @@
 
-# plto function borrowed from here 
+# plot function borrowed from here 
 #https://r-coder.com/normal-distribution-r/
  
 #Another plot function - prob easier to use  
