@@ -1,0 +1,173 @@
+---
+title: "Part 2-4: How to calcualte probabilities for a range of event from your continuous data"
+author: "Hiroshi"
+date: "2024-09-13"
+output: html_document
+---
+
+
+# The link to this document contains multiple choice questions that will help understand essential concepts and tasks related to normal random variables for Part 2-4, which will play the central role in understanding this course.  
+
+
+  
+### Purpose      
+This document describes how to calculate the probability and the range of continuous random variable using using *pnorm* and *qnorm* functions in Rstudio, to check how (un)likely your data are, in terms of probability.  
+We will work on the two common key tasks in this course to build the foundation knowledge to answer assignments and the exams.    
+
+
+### Tasks to master 
+1) How to get the area (probability) under the curve, if you are asked to calculate this based on the range of X; In other words, if you are asked to calculate $P(a \leq X  \leq b)$ or $P(a \leq  Z  \leq b)$, the latter being the linear transformed version of X (recall Part 1, Transformation). .     
+  **Example**. What proportion of people fall under the height between $a <= X <= b$ centimeter ?    
+  **Inputs you are given**: range, or the values of a and b. Note that it is your responsibility to infer a and b from the problem description i.e., I will not state "a" and "b". 
+  
+  
+  
+2) How to get the value of X (your outcome range e.g., range of X variable,which can be the standard deviation if using standardized distribution, or the real measure)   
+  **Example**. What is the range of height (values of a and b) which that $p$% people fall?    
+  **Inputs you are given**: probability (density, or area under the curve) 
+
+Often you are provided with the mean and variance(sd) of your data $\mu$ and $\sigma^2$, and if not, you will be instructed to assume $\mu=0$ and $\sigma^2=1$   
+
+
+
+
+
+
+
+### Preparation 
+First, make a tiny program that draw and paint probability density function - you will study how to make this in "Write your own functions" module in EPIB613
+```{r }
+normal_area <- function(mean = 0, sd = 1, lb, ub, acolor = "lightgray", main , ...) {
+  x <- seq(mean - 3 * sd, mean + 3 * sd, length = 100) 
+  
+  if (missing(lb)) {
+    lb <- min(x)
+  }
+  if (missing(ub)) {
+    ub <- max(x)
+  }
+  
+  x2 <- seq(lb, ub, length = 100)    
+  plot(x, dnorm(x, mean, sd), type = "n", ylab = "", main = main)
+  
+  y <- dnorm(x2, mean, sd)
+  polygon(c(lb, x2, ub), c(0, y, 0), col = "lightblue")
+  lines(x, dnorm(x, mean, sd), type = "l", ...)
+}
+```
+
+How to use this plotting program above? See the example below - I highlihted the proprotion (probability) of people falling into the range of 150 cm and 120 cm, from the popualtion whose mean hight and standard deviation is mean = $\mu$ and sd = $\sigma$. 
+
+
+```{r, fig.height=4, fig.width= 12}
+# Demo 
+par(mfrow = c(1, 3))
+normal_area(mean = 130, sd = 10, lb = 0, ub = 150, main = "P(X <= 150)")
+normal_area(mean = 130, sd = 10, lb = 0, ub = 120,  main = "P(X <= 120)")
+normal_area(mean = 130, sd = 10, lb = 120, ub = 150, main =  " P(120 <= X <= 150)" )
+```
+
+
+
+## Tasks  
+The questions below are modified into the health science contexts from the question 1-4 in this webpage.    
+https://highered.mheducation.com/sites/0070620164/student_view0/chapter4/multiple_choice_quiz.html    
+**You are recommended to solve the remanining questions. **
+
+
+
+### **Task 1** - get the probability within a range of X with normal distribution,  with the ppopulation mean and standard distribution of $\mu = 0$ and  $\sigma = 1$. 
+Find the area (probability) that falls into the -0.5 and 0.5 standard deviation from the mean (that is, $P(-0.5 \leq Z \leq  0.5)$, where Z means standard normal distribution with $\mu = 0$ and  $\sigma = 1$.   
+
+Step1: Get the cumulative probability that falls below $\sigma = 0.5$. Then get the probability that falls below $\sigma = -0.5$.
+```{r}
+lower <- pnorm(mean = 0, sd = 1, q =  -0.5)
+upper <- pnorm(mean = 0, sd = 1, q =  0.5)
+```
+
+Then, subract the first cumulative probability from the second, **to crop**. 
+```{r}
+upper - lower 
+```
+
+```{r, fig.height=4, fig.width= 12}
+par(mfrow = c(1, 3))
+normal_area(mean = 0, sd = 1, lb = -5, ub =  0.5, main = "P(Z <= 0.5)")
+normal_area(mean = 0, sd = 1, lb = -5, ub = -0.5,  main = "P(Z > 0.5 )")
+normal_area(mean = 0, sd = 1, lb = -0.5, ub = 0.5, main =  " P(-0.5 <= Z <= 0.5)" )
+```
+
+
+### **Task 2** Find the probability that a Z distribution has a value greater than $\sigma = -1.56$ 
+We are interested in the upper half of the curve. And the probability function always output the lower half, so to get the upper half, we need to compute $1- P(X \leq x)$. 
+
+```{r}
+lower <- pnorm(mean = 0, sd = 1, q =  -1.56)
+
+1-lower
+```
+
+
+
+```{r, fig.height=4, fig.width= 12}
+par(mfrow = c(1, 3))
+normal_area(mean = 0, sd = 1, lb = -10, ub =  -1.56, main = "P(Z <= -1.56")
+normal_area(mean = 0, sd = 1, lb = -10, ub = 10,  main = "Entire curve")
+normal_area(mean = 0, sd = 1, lb = -1.56, ub = 10, main =  "P(Z >= -1.56") 
+```
+
+
+### **Task 3** Among the population with mean test score of 100 and standard deviation of 20, find the symmetric range ($+a and -a$) of test scores that covers 99 % of people in this population. 
+
+This time, you are given the probability and find the range X in which x% of people belong to. You need to use a slightly different function in R to do so.   
+
+It is symmetric, so you need to find 0.5% and 0.5% in each side, so that the middle proportion of people cover the 99%. You will do this in R software as below: 
+```{r, fig.height=4, fig.width= 12}
+qnorm(mean = 100, sd = 20, p =  0.995)
+qnorm(mean = 100, sd = 20, p =  0.005)
+```
+...and plugging in the upper and the lower test scores, the proportion of people falling into this range is as follows. 
+```{r, fig.height=4, fig.width= 12}
+par(mfrow = c(1, 3))
+myMean = 100; mySd= 20
+normal_area(mean = myMean, sd = mySd, lb = 0, ub =  151.5, main = "P(X <= 0.095)")
+normal_area(mean = myMean, sd = mySd, lb = 0, ub = 48,  main = "P(X > 0.05 )")
+normal_area(mean = myMean, sd = mySd, lb = 48, ub = 151, main =  " P(-0.05 <= X <= 0.095)" )
+
+```
+
+
+### **Task 3** In a rural population, the mean distance to healthcare facility is 30,000 meters, with a standard deviation of 2500 meters. What is the probability that a given person live 37500 meters or further from the healthcare. 
+
+
+Again, the cumulative probability is calculated from the left side of the distribution, so to calculate the area (probability) under the right side, we need to use the complement rule. That is, 
+```{r, fig.height=4, fig.width= 12}
+  1-pnorm(mean = 30000, sd = 2500, q=37500)
+```
+and this very small probability (area - density) looks as follows. 
+
+```{r, fig.height=4, fig.width= 12}
+par(mfrow = c(1,3))
+myMean = 30000; mySd= 2500
+normal_area(mean = myMean, sd = mySd, lb = 0, ub =  50000, main = "X >= 37500")
+normal_area(mean = myMean, sd = mySd, lb = 0, ub =  37500, main = "X <= 37500")
+normal_area(mean = myMean, sd = mySd, lb = 37500, ub =  40000, main = "X > 37500 (so tiny area...)")
+
+```
+
+
+
+
+
+
+
+### **Optional task** - Find the probability between $\sigma =-2$ and $\sigma = 2$ (but you know the answer already from Part 1)
+Step1: Get the cumulative probability that falls below $\sigma = 2$. Then get the probability that falls below $\sigma = -2$.
+Step2: And like the example above, subtract the opper cumulative from the lower cumulative probability.
+```{r}
+lower <- pnorm(mean = 0, sd = 1, q =  -2)
+upper <- pnorm(mean = 0, sd = 1, q =  2)
+
+upper - lower 
+```
+
