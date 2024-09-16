@@ -37,7 +37,7 @@ Often you are provided with the mean and variance(sd) of your data $\mu$ and $\s
 ### Preparation 
 First, make a tiny program that draw and paint probability density function - you will study how to make this in "Write your own functions" module in EPIB613
 ```{r }
-normal_area <- function(mean = 0, sd = 1, lb, ub, acolor = "lightgray", main , ...) {
+normal_area <- function(mean = 0, sd = 1, lb, ub, acolor = "lightgray", main , xlab ="x", ...) {
   x <- seq(mean - 3 * sd, mean + 3 * sd, length = 100) 
   
   if (missing(lb)) {
@@ -48,7 +48,7 @@ normal_area <- function(mean = 0, sd = 1, lb, ub, acolor = "lightgray", main , .
   }
   
   x2 <- seq(lb, ub, length = 100)    
-  plot(x, dnorm(x, mean, sd), type = "n", ylab = "", main = main)
+  plot(x, dnorm(x, mean, sd), type = "n", ylab = "", main = main, xlab = xlab)
   
   y <- dnorm(x2, mean, sd)
   polygon(c(lb, x2, ub), c(0, y, 0), col = "lightblue")
