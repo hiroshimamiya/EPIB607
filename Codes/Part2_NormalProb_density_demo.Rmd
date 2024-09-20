@@ -1,12 +1,12 @@
 ---
-title: "Part 2-4: How to calcualte probabilities for a range of event from your continuous data"
+title: "Part 2-4: How to calculate probabilities for ranges of event from your continuous data"
 author: "Hiroshi"
 date: "2024-09-13"
 output: html_document
 ---
 
 
-# The link to this document contains multiple choice questions that will help understand essential concepts and tasks related to normal random variables for Part 2-4, which will play the central role in understanding this course.  
+# The link in this document contains multiple choice questions that will help understand essential concepts and tasks related to normal random variables for Part 2-4, which will play the central role in understanding this course.  
 
 
   

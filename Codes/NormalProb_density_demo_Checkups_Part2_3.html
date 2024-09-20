@@ -13,7 +13,7 @@
 
 <meta name="date" content="2024-09-13" />
 
-<title>Part 2-4: How to calcualte probabilities for a range of event from your continuous data</title>
+<title>Part 2-4: How to calculate probabilities for ranges of event from your continuous data</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -350,16 +350,16 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Part 2-4: How to calcualte probabilities
-for a range of event from your continuous data</h1>
+<h1 class="title toc-ignore">Part 2-4: How to calculate probabilities
+for ranges of event from your continuous data</h1>
 <h4 class="author">Hiroshi</h4>
 <h4 class="date">2024-09-13</h4>
 
 </div>
 
 
-<div id="the-link-to-this-document-contains-multiple-choice-questions-that-will-help-understand-essential-concepts-and-tasks-related-to-normal-random-variables-for-part-2-4-which-will-play-the-central-role-in-understanding-this-course." class="section level1">
-<h1>The link to this document contains multiple choice questions that
+<div id="the-link-in-this-document-contains-multiple-choice-questions-that-will-help-understand-essential-concepts-and-tasks-related-to-normal-random-variables-for-part-2-4-which-will-play-the-central-role-in-understanding-this-course." class="section level1">
+<h1>The link in this document contains multiple choice questions that
 will help understand essential concepts and tasks related to normal
 random variables for Part 2-4, which will play the central role in
 understanding this course.</h1>
@@ -405,7 +405,7 @@ instructed to assume <span class="math inline">\(\mu=0\)</span> and
 <p>First, make a tiny program that draw and paint probability density
 function - you will study how to make this in “Write your own functions”
 module in EPIB613</p>
-<pre class="r"><code>normal_area &lt;- function(mean = 0, sd = 1, lb, ub, acolor = &quot;lightgray&quot;, main , ...) {
+<pre class="r"><code>normal_area &lt;- function(mean = 0, sd = 1, lb, ub, acolor = &quot;lightgray&quot;, main , xlab =&quot;x&quot;, ...) {
   x &lt;- seq(mean - 3 * sd, mean + 3 * sd, length = 100) 
   
   if (missing(lb)) {
@@ -416,7 +416,7 @@ module in EPIB613</p>
   }
   
   x2 &lt;- seq(lb, ub, length = 100)    
-  plot(x, dnorm(x, mean, sd), type = &quot;n&quot;, ylab = &quot;&quot;, main = main)
+  plot(x, dnorm(x, mean, sd), type = &quot;n&quot;, ylab = &quot;&quot;, main = main, xlab = xlab)
   
   y &lt;- dnorm(x2, mean, sd)
   polygon(c(lb, x2, ub), c(0, y, 0), col = &quot;lightblue&quot;)
