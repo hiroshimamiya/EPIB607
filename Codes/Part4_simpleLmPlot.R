@@ -31,7 +31,7 @@ abline(a= mean(CancerRate), b = 0,col = "black")
 
 
 
-
+# Least square estimation 
 # Beta_1
 SS_xy <- sum((Cigarette - mean(Cigarette))*(CancerRate - mean(CancerRate))) 
 SS_xx <- sum((Cigarette - mean(Cigarette))^2)
