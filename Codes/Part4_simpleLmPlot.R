@@ -38,3 +38,6 @@ SS_xx <- sum((Cigarette - mean(Cigarette))^2)
 SS_xy/SS_xx 
 # Beta_0
 mean(CancerRate) - beta1*mean(Cigarette)
+
+# Confirm
+lm(CancerRate ~ Cigarette)
