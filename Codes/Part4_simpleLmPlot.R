@@ -28,3 +28,13 @@ CancerRate <- 0*Cigarette + rnorm(sd = 3, n = 50) + 15
 
 plot(Cigarette, CancerRate, pch = 16,  main = "Slope coefficient is zero", ylim = c(3, 40))
 abline(a= mean(CancerRate), b = 0,col = "black")
+
+
+
+
+# Beta_1
+SS_xy <- sum((Cigarette - mean(Cigarette))*(CancerRate - mean(CancerRate))) 
+SS_xx <- sum((Cigarette - mean(Cigarette))^2)
+SS_xy/SS_xx 
+# Beta_0
+mean(CancerRate) - beta1*mean(Cigarette)
