@@ -37,7 +37,49 @@ Often you are provided with the mean and variance(sd) of your data $\mu$ and $\s
 
 
 
-### Preparation 
+# Specific questions (tasks)  - Try to solve without looking at answers below.          
+
+### **Task 1**      
+Get the probability within a range of X with normal distribution,  with the population mean and standard distribution of $\mu = 0$ and  $\sigma = 1$. 
+Find the area (probability) that falls into the -0.5 and 0.5 standard deviation from the mean (that is, $P(-0.5 \leq Z \leq  0.5)$, where Z means standard normal distribution with $\mu = 0$ and  $\sigma = 1$.  
+
+
+
+### **Task 2**     
+## Find the probability that a Z distribution has a value greater than $\sigma = -1.56$     
+We are interested in the upper half of the curve. And the probability function always output the lower half, so to get the upper half, we need to compute $1- P(X \leq x)$. 
+
+
+ 
+### **Task 3**       
+## Among the population with mean test score of 100 and standard deviation of 20, find the symmetric range ($+a\ and\ -a$) of test scores that covers 99 % of people in this population.      
+
+This time, you are given the probability and find the range X in which x% of people belong to. You need to use a slightly different function in R to do so.   
+
+It is symmetric, so you need to find 0.5% and 0.5% in each side, so that the middle proportion of people cover the 99%. You will do this in R software as below: 
+
+
+### **Task 4**     
+## In a rural population, the mean distance to healthcare facility is 30,000 meters, with a standard deviation of 2500 meters. What is the probability that a given person live 37500 meters or further from the healthcare.    
+
+
+
+### **Optional task**     
+## Find the probability between $\sigma =-2$ and $\sigma = 2$ (but you know the answer already from Part 1)       
+
+Step1: Get the cumulative probability that falls below $\sigma = 2$. Then get the probability that falls below $\sigma = -2$.
+Step2: And like the example above, subtract the opper cumulative from the lower cumulative probability.
+
+
+
+
+
+
+
+
+
+
+### Preparation    
 First, make a tiny program that draw and paint probability density function - you will study how to make this in "Write your own functions" module in EPIB613
 ```{r }
 normal_area <- function(mean = 0, sd = 1, lb, ub, acolor = "lightgray", main , xlab ="x", ...) {
@@ -140,7 +182,7 @@ normal_area(mean = myMean, sd = mySd, lb = 48, ub = 151, main =  " P(-0.05 <= X 
 ```
 
 
-### **Task 3** In a rural population, the mean distance to healthcare facility is 30,000 meters, with a standard deviation of 2500 meters. What is the probability that a given person live 37500 meters or further from the healthcare. 
+### **Task 4** In a rural population, the mean distance to healthcare facility is 30,000 meters, with a standard deviation of 2500 meters. What is the probability that a given person live 37500 meters or further from the healthcare. 
 
 
 Again, the cumulative probability is calculated from the left side of the distribution, so to calculate the area (probability) under the right side, we need to use the complement rule. That is, 
